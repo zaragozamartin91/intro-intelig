@@ -128,6 +128,12 @@ public class CsvNormalizer {
         if (description.contains("CURRENT REG. CARD")) return LIC_MSG;
         if (description.contains("UNREGISTERED")) return LIC_MSG;
         if (description.contains("TO HAVE LIC.WITH HIM")) return LIC_MSG;
+        if (description.contains("UNPAID REGISTRATION")) return LIC_MSG;
+        if (description.contains("W/O CURRENT REGISTRATION")) return LIC_MSG;
+        if (description.contains("CURRENT REGISTRATION & VALIDATION")) return LIC_MSG;
+        if (description.contains("suspended")) return LIC_MSG;
+        if (description.contains("display")) return LIC_MSG;
+
 
 
         if (description.contains("ALCOHOL")) return "IMPAIRED BY DRUGS OR ALCOHOL";
@@ -137,6 +143,7 @@ public class CsvNormalizer {
         //UNINSURED
 
         if (description.contains("UNINSURED")) return "DRIVING UNINSURED VEHICLE";
+        if (description.contains("DRIVING NINSURED VEHICLE")) return "DRIVING UNINSURED VEHICLE";
 
 
         if (description.contains("EQUIP")) return "VEHICLE OR EQUIPMENT VIOLATION";
@@ -147,6 +154,15 @@ public class CsvNormalizer {
         if (description.contains("DISPLAY LIGHTED LAMPS")) return "VEHICLE OR EQUIPMENT VIOLATION";
         if (description.contains("OBSTRUCTED WINDSHIELD")) return "VEHICLE OR EQUIPMENT VIOLATION";
         if (description.contains("W/O TIRES")) return "VEHICLE OR EQUIPMENT VIOLATION";
+        if (description.contains("TAG LIGHTS")) return "VEHICLE OR EQUIPMENT VIOLATION";
+        if (description.contains("TAILLIGHTS")) return "VEHICLE OR EQUIPMENT VIOLATION";
+        if (description.contains("HEADLIGHTS")) return "VEHICLE OR EQUIPMENT VIOLATION";
+        if (description.contains("VISIBILITY")) return "VEHICLE OR EQUIPMENT VIOLATION";
+        if (description.contains("VISIBLE RED")) return "VEHICLE OR EQUIPMENT VIOLATION";
+        if (description.contains("VEHICLE WITHOUT LIGHTED HEAD")) return "VEHICLE OR EQUIPMENT VIOLATION";
+        if (description.contains("W/O ADEQUATE TAIL LAMPS")) return "VEHICLE OR EQUIPMENT VIOLATION";
+        if (description.contains("FAILURE TO AVOID PROJECTING GLARING LIGHT")) return "VEHICLE OR EQUIPMENT VIOLATION";
+        if (description.contains("LAMP IMPROPERLY DISPLAYING WHITE LIGHT")) return "VEHICLE OR EQUIPMENT VIOLATION";
         //
 
 
@@ -155,6 +171,9 @@ public class CsvNormalizer {
         if (description.contains("LANE")) return "RECKLESS DRIVING";
         if (description.contains("CLOSER THAN REASONABLE")) return "RECKLESS DRIVING";
         if (description.contains("DRIVE ACROSS PRIVATE")) return "RECKLESS DRIVING";
+        if (description.contains("FAILURE") && description.contains("DRIVE") && description.contains("RIGHT")) {
+            return "RECKLESS DRIVING";
+        }
 
 
         if (description.startsWith("PEDESTRIAN")) return "PEDESTRIAN INFRACTION";
@@ -164,6 +183,7 @@ public class CsvNormalizer {
         if (description.contains("ACC.")) return "ACCIDENT RELATED";
         if (description.contains("UNATTENDED DAMAGED")) return "ACCIDENT RELATED";
         if (description.contains("PROP. DAMAGE")) return "ACCIDENT RELATED";
+        if (description.contains("FAILURE TO EXERCISE DUE CARE TO AVOID PEDESTRIAN COLLISION")) return "ACCIDENT RELATED";
         //PROP. DAMAGE
 
 
@@ -186,6 +206,11 @@ public class CsvNormalizer {
         if (description.contains("WRONG WAY")) return MINOR_INFRACTION;
         if (description.contains("UNSAFE BACKING")) return MINOR_INFRACTION;
         if (description.contains("TO CARRY CARGO")) return MINOR_INFRACTION;
+        if (description.contains("PROVISIONAL DRIVER UNDER 18 DRIVING")) return MINOR_INFRACTION;
+        if (description.contains("HORN ON HWY. WHEN NOT REASONABLY NECESSARY")) return MINOR_INFRACTION;
+        if (description.contains("STANDING VEH. TO OBSTRUCT FREE VEH.")) return MINOR_INFRACTION;
+        if (description.contains("VEH. FOR GENERAL DAILY TRANSPORTATION")) return MINOR_INFRACTION;
+        if (description.contains("IMPROPER USE OF VEH. FOG LAMP")) return MINOR_INFRACTION;
         if (description.contains("CHILD")) {
             if (description.contains("SECURE") || description.contains("TRANSPORT")) {
                 return MINOR_INFRACTION;
@@ -202,6 +227,23 @@ public class CsvNormalizer {
         if (description.contains("EARPLUGS")) return "IMPAIRED HEARING";
         if (description.contains("EARPHONES")) return "IMPAIRED HEARING";
         if (description.contains("HEADSET")) return "IMPAIRED HEARING";
+
+
+        if (description.contains("SPINNING WHEELS")) return "NOISE RELATED";
+        if (description.contains("SOUND")) return "NOISE RELATED";
+        if (description.contains("NOISE")) return "NOISE RELATED";
+
+
+        if (description.contains("ADDRESS CHANGE")) return "PAPERWORK RELATED";
+        if (description.contains("VALID MEDICAL")) return "PAPERWORK RELATED";
+        if (description.contains("DISPLAYDECAL ON VEHICLE")) return "PAPERWORK RELATED";
+        if (description.contains("PRESENT EVIDENCE OF REQUIRED SECURITY")) return "PAPERWORK RELATED";
+        if (description.contains("VIOLATION OF RENTAL AGREEMENT")) return "PAPERWORK RELATED";
+        if (description.contains("FAILURE TO MAINTAIN REQUIRED SECURITY")) return "PAPERWORK RELATED";
+
+
+        if (description.contains("UNAUTHORIZED PERSON")) return "UNAUTHORIZED PERSON DRIVING";
+
 
         return description;
     }
