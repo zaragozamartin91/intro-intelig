@@ -11,7 +11,7 @@ import java.util.Date;
 import java.util.regex.Pattern;
 
 public class CsvNormalizer {
-    static final int[] HEADER_INDEXES = {0, 1, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33};
+    static final int[] HEADER_INDEXES = {1, 3, 4, 5, 9, 10, 11, 12, 13, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33};
     static final int ADDR_HEADER_INDEX = 3;
     static final int DESC_HEADER_INDEX = 4;
     static final int TIME_HEADER_INDEX = 1;
@@ -32,7 +32,7 @@ public class CsvNormalizer {
         File outFile = new File(outFilePath);
         Files.delete(outFile.toPath());
 
-        InputStream filestream = MainApp.class.getResourceAsStream(inFileName);
+        InputStream filestream = CsvNormalizer.class.getResourceAsStream(inFileName);
         BufferedReader csvReader = new BufferedReader(new InputStreamReader(filestream));
         PrintWriter writer = new PrintWriter(new FileOutputStream(outFile));
 
@@ -48,7 +48,7 @@ public class CsvNormalizer {
         writer.close();
     }
 
-    private static void writeRecord(CSVRecord record, PrintWriter writer) throws ParseException {
+    private void writeRecord(CSVRecord record, PrintWriter writer) throws ParseException {
         StringBuilder recordLine = new StringBuilder();
 
         for (int i = 0; i < HEADER_INDEXES.length; i++) {
@@ -65,7 +65,7 @@ public class CsvNormalizer {
         writer.println(recordLine.toString());
     }
 
-    private static String standarizeTime(String value) throws ParseException {
+    private String standarizeTime(String value) throws ParseException {
         if (value.startsWith("0")) value = "0" + value;
         Date date = DATE_FORMAT.parse(value);
         Calendar calendar = Calendar.getInstance();
@@ -75,11 +75,11 @@ public class CsvNormalizer {
         return hour + ":00:00";
     }
 
-    private static String removeCommas(String value) {
+    private String removeCommas(String value) {
         return value.replaceAll(Pattern.quote(","), "");
     }
 
-    private static void writeHeader(CSVRecord record, PrintWriter writer) {
+    private void writeHeader(CSVRecord record, PrintWriter writer) {
         StringBuilder headerLine = new StringBuilder(removeSpaces(record.get(HEADER_INDEXES[0])));
         for (int i = 1; i < HEADER_INDEXES.length; i++) {
             headerLine.append("," + removeSpaces(record.get(HEADER_INDEXES[i])));
@@ -87,11 +87,11 @@ public class CsvNormalizer {
         writer.println(headerLine.toString());
     }
 
-    private static String removeSpaces(String s) {
+    private String removeSpaces(String s) {
         return s.replaceAll(" +", "");
     }
 
-    private static String standarizeDescription(String description) {
+    private String standarizeDescription(String description) {
         if (description.contains("ELUDE")) return "ELUDE POLICE";
         if (description.contains("SIGNAL BY POLICE")) return "ELUDE POLICE";
 
@@ -133,7 +133,11 @@ public class CsvNormalizer {
         if (description.contains("CURRENT REGISTRATION & VALIDATION")) return LIC_MSG;
         if (description.contains("suspended")) return LIC_MSG;
         if (description.contains("display")) return LIC_MSG;
-
+        if (description.contains("SUSPENDED LIC AND PRIVILEGE")) return LIC_MSG;
+        if (description.contains("FALSIFIED VEH. DOCUMENT")) return LIC_MSG;
+        if (description.contains("FAIL TO DISPLAY REG. CARD")) return LIC_MSG;
+        if (description.contains("FRAUD IN USE OF MVA ID CARD")) return LIC_MSG;
+        if (description.contains("DRIVING W/O CURRENT TAGS")) return LIC_MSG;
 
 
         if (description.contains("ALCOHOL")) return "IMPAIRED BY DRUGS OR ALCOHOL";
@@ -163,6 +167,15 @@ public class CsvNormalizer {
         if (description.contains("W/O ADEQUATE TAIL LAMPS")) return "VEHICLE OR EQUIPMENT VIOLATION";
         if (description.contains("FAILURE TO AVOID PROJECTING GLARING LIGHT")) return "VEHICLE OR EQUIPMENT VIOLATION";
         if (description.contains("LAMP IMPROPERLY DISPLAYING WHITE LIGHT")) return "VEHICLE OR EQUIPMENT VIOLATION";
+        if (description.contains("INADEQUATE STEERING AXLES TIRE")) return "VEHICLE OR EQUIPMENT VIOLATION";
+        if (description.contains("WINDSHIELD VIEW OBSTRUCTED")) return "VEHICLE OR EQUIPMENT VIOLATION";
+        if (description.contains("USE REFLECTORS ON MOTOR VEH. CHANGING ORIGINAL PERFORMANCE"))
+            return "VEHICLE OR EQUIPMENT VIOLATION";
+        if (description.contains("FAILURE TO DISPLAY & REFLECT AMBER COLOR")) return "VEHICLE OR EQUIPMENT VIOLATION";
+        if (description.contains("LAMPS OBSCURED BY OTHERWISE")) return "VEHICLE OR EQUIPMENT VIOLATION";
+        if (description.contains("REMOVABLE WINDSHIELD PLACARD IS HANGING FROM"))
+            return "VEHICLE OR EQUIPMENT VIOLATION";
+        if (description.contains("ALTERED & DANGEROUS BUMPER")) return "VEHICLE OR EQUIPMENT VIOLATION";
         //
 
 
@@ -183,7 +196,8 @@ public class CsvNormalizer {
         if (description.contains("ACC.")) return "ACCIDENT RELATED";
         if (description.contains("UNATTENDED DAMAGED")) return "ACCIDENT RELATED";
         if (description.contains("PROP. DAMAGE")) return "ACCIDENT RELATED";
-        if (description.contains("FAILURE TO EXERCISE DUE CARE TO AVOID PEDESTRIAN COLLISION")) return "ACCIDENT RELATED";
+        if (description.contains("FAILURE TO EXERCISE DUE CARE TO AVOID PEDESTRIAN COLLISION"))
+            return "ACCIDENT RELATED";
         //PROP. DAMAGE
 
 
@@ -211,6 +225,7 @@ public class CsvNormalizer {
         if (description.contains("STANDING VEH. TO OBSTRUCT FREE VEH.")) return MINOR_INFRACTION;
         if (description.contains("VEH. FOR GENERAL DAILY TRANSPORTATION")) return MINOR_INFRACTION;
         if (description.contains("IMPROPER USE OF VEH. FOG LAMP")) return MINOR_INFRACTION;
+        if (description.contains("STANDING VEH. IN FRONT OF PUBLIC DRIVEWAY")) return MINOR_INFRACTION;
         if (description.contains("CHILD")) {
             if (description.contains("SECURE") || description.contains("TRANSPORT")) {
                 return MINOR_INFRACTION;
@@ -225,8 +240,10 @@ public class CsvNormalizer {
 
 
         if (description.contains("EARPLUGS")) return "IMPAIRED HEARING";
+        if (description.contains("EAR PLUGS")) return "IMPAIRED HEARING";
         if (description.contains("EARPHONES")) return "IMPAIRED HEARING";
         if (description.contains("HEADSET")) return "IMPAIRED HEARING";
+        if (description.contains("HEADPHONES")) return "IMPAIRED HEARING";
 
 
         if (description.contains("SPINNING WHEELS")) return "NOISE RELATED";
@@ -240,9 +257,16 @@ public class CsvNormalizer {
         if (description.contains("PRESENT EVIDENCE OF REQUIRED SECURITY")) return "PAPERWORK RELATED";
         if (description.contains("VIOLATION OF RENTAL AGREEMENT")) return "PAPERWORK RELATED";
         if (description.contains("FAILURE TO MAINTAIN REQUIRED SECURITY")) return "PAPERWORK RELATED";
+        if (description.contains("W/O MOTOR CARRIER AUTHORITY")) return "PAPERWORK RELATED";
 
 
         if (description.contains("UNAUTHORIZED PERSON")) return "UNAUTHORIZED PERSON DRIVING";
+
+
+        if (description.contains("WHEN NOT ABLE TO COMPLY WITH ENGLISH SPEAKING REQUIREMENTS")) return "OTHER";
+        if (description.contains("SOLICIT DONATIONS W/O PERMIT")) return "OTHER";
+        if (description.contains("THROWING ANY REFUSEON")) return "OTHER";
+        if (description.contains("FRONT LEFT CLEARANCE; 1 OF 3 FRONT ID")) return "OTHER";
 
 
         return description;
