@@ -11,7 +11,20 @@ public class MainApp {
         CsvNormalizer csvNormalizer = new CsvNormalizer(recordsToKeep, outFilePath, inFileName);
 
         csvNormalizer.run();
+
+        System.out.println();
+        System.out.println("Dataset original headers:");
         new HeaderPrinter(inFileName).printHeaders();
+
+        System.out.println();
+        System.out.println("Out file headers:");
+        new HeaderPrinter(outFilePath).printHeaders();
+
+        System.out.println();
+        int recordCount = new RecordCounter(outFilePath).count(record ->
+                record.get(6).trim().equalsIgnoreCase("yes")
+        );
+        System.out.printf("Record count by criteria: %d%n", recordCount);
     }
 
 }
