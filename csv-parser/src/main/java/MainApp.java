@@ -4,7 +4,7 @@ import java.text.ParseException;
 public class MainApp {
 
     public static void main(String[] args) throws IOException, ParseException {
-        int recordsToKeep = args.length == 0 ? 4000 : Integer.parseInt(args[0]);
+        int recordsToKeep = args.length == 0 ? 5000 : Integer.parseInt(args[0]);
 
         String outFilePath = "out.csv";
         String inFileName = "Traffic_Violations.csv";
@@ -25,6 +25,11 @@ public class MainApp {
                 record.get(6).trim().equalsIgnoreCase("yes")
         );
         System.out.printf("Record count by criteria: %d%n", recordCount);
+
+
+        System.out.println();
+        final RecordOccurrenceFilter occurrenceFilter = new RecordOccurrenceFilter(outFilePath, "description", 0.07, "out_2.csv");
+        occurrenceFilter.filter();
     }
 
 }

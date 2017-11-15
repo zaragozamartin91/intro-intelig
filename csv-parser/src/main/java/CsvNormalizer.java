@@ -11,12 +11,13 @@ import java.util.Date;
 import java.util.regex.Pattern;
 
 public class CsvNormalizer {
-    static final int[] HEADER_INDEXES = {1, 3, 4, 5, 9, 10, 11, 12, 13, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33};
-    static final int ADDR_HEADER_INDEX = 3;
-    static final int DESC_HEADER_INDEX = 4;
-    static final int TIME_HEADER_INDEX = 1;
-    static final int LAST_HEADER_INDEX = HEADER_INDEXES.length - 1;
-    static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("HH:mm:ss");
+    static final int[] HEADER_INDEXES = Config.HEADER_INDEXES;
+    static final int ADDR_HEADER_INDEX = Config.ADDR_HEADER_INDEX;
+    static final int DESC_HEADER_INDEX = Config.DESC_HEADER_INDEX;
+    static final int TIME_HEADER_INDEX = Config.TIME_HEADER_INDEX;
+    static final int LAST_HEADER_INDEX = Config.LAST_HEADER_INDEX;
+    static final SimpleDateFormat DATE_FORMAT = Config.DATE_FORMAT;
+
 
     int recordsToKeep;
     String outFilePath;
@@ -32,8 +33,7 @@ public class CsvNormalizer {
         File outFile = new File(outFilePath);
         try {
             Files.delete(outFile.toPath());
-        } catch (IOException e) {
-        }
+        } catch (IOException e) { }
 
 
         InputStream filestream = new FileInputStream(inFileName);
@@ -135,6 +135,7 @@ public class CsvNormalizer {
         if (description.contains("FAIL TO DISPLAY REG. CARD")) return LIC_MSG;
         if (description.contains("FRAUD IN USE OF MVA ID CARD")) return LIC_MSG;
         if (description.contains("DRIVING W/O CURRENT TAGS")) return LIC_MSG;
+        if (description.contains("REQUIRED ACT PERTAINING TO DRIVER'S LIC")) return LIC_MSG;
 
 
         if (description.contains("ALCOHOL")) return "IMPAIRED BY DRUGS OR ALCOHOL";
@@ -170,6 +171,11 @@ public class CsvNormalizer {
         if (description.contains("LAMPS OBSCURED BY OTHERWISE")) return VEHICLE_EQUIPMENT_VIOLATION;
         if (description.contains("REMOVABLE WINDSHIELD PLACARD IS HANGING FROM")) return VEHICLE_EQUIPMENT_VIOLATION;
         if (description.contains("ALTERED & DANGEROUS BUMPER")) return VEHICLE_EQUIPMENT_VIOLATION;
+        if (description.contains("WITHOUT REQUIRED SIGNAL LAMPS")) return VEHICLE_EQUIPMENT_VIOLATION;
+        if (description.contains("DRIVING CAUSING TO BE DRIVEN UNSAFE VEH")) return VEHICLE_EQUIPMENT_VIOLATION;
+        if (description.contains("DRIVING UNSAFE VEH")) return VEHICLE_EQUIPMENT_VIOLATION;
+        if (description.contains("WITH VISIBLE BLUE DEVICE")) return VEHICLE_EQUIPMENT_VIOLATION;
+        if (description.contains("WITH VISIBLE BLUE LAMP")) return VEHICLE_EQUIPMENT_VIOLATION;
 
 
         final String RECKLESS_DRIVING = "RECKLESS DRIVING";
@@ -178,6 +184,8 @@ public class CsvNormalizer {
         if (description.contains("LANE")) return RECKLESS_DRIVING;
         if (description.contains("CLOSER THAN REASONABLE")) return RECKLESS_DRIVING;
         if (description.contains("DRIVE ACROSS PRIVATE")) return RECKLESS_DRIVING;
+        if (description.contains("REDUCE LIGHT DISTRIBUTION WHEN WITHIN")) return RECKLESS_DRIVING;
+        if (description.contains("AGGRESSIVE DRIVING")) return RECKLESS_DRIVING;
         if (description.contains("FAILURE") && description.contains("DRIVE") && description.contains("RIGHT")) return RECKLESS_DRIVING;
 
 
@@ -216,6 +224,8 @@ public class CsvNormalizer {
         if (description.contains("VEH. FOR GENERAL DAILY TRANSPORTATION")) return MINOR_INFRACTION;
         if (description.contains("IMPROPER USE OF VEH. FOG LAMP")) return MINOR_INFRACTION;
         if (description.contains("STANDING VEH. IN FRONT OF PUBLIC DRIVEWAY")) return MINOR_INFRACTION;
+        if (description.contains("NOT RESTRAINED BY CHILD SAFETY SEAT")) return MINOR_INFRACTION;
+        if (description.contains("STANDING VEH. ON CROSSWALK")) return MINOR_INFRACTION;
         if (description.contains("SEATBELT") || description.contains("SEAT BELT")) return MINOR_INFRACTION;
         if (description.contains("CHILD")) {
             if (description.contains("SECURE") || description.contains("TRANSPORT")) {
