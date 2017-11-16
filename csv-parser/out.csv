@@ -27,11 +27,11 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 8:00:00,4th district Wheaton,SPEEDING,MD,02 - Automobile,2004,ACUR,GOLD,Citation,Transportation Article,No,OTHER,M,TAKOMA PARK,MD,MD,Q - Marked Laser
 8:00:00,2nd district Bethesda,MINOR INFRACTION,MD,10 - Transit Bus,2012,GILL,BLUE,Citation,Transportation Article,No,BLACK,F,FORESTVILLE,MD,MD,A - Marked Patrol
 14:00:00,6th district Gaithersburg / Montgomery Village,PLATE VIOLATION,MD,02 - Automobile,2005,CADI,BLACK,Citation,Transportation Article,No,WHITE,M,GAITHERSBURG,MD,MD,A - Marked Patrol
-12:00:00,Headquarters and Special Operations,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,O - Foot Patrol
+12:00:00,Headquarters and Special Operations,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,O - Foot Patrol
 1:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,MD,05 - Light Duty Truck,2005,FORD,RED,Citation,Transportation Article,No,HISPANIC,M,CLARKSBURG,MD,MD,A - Marked Patrol
 23:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2008,HONDA,GRAY,Citation,Transportation Article,No,WHITE,F,SILVER SPRING,MD,MD,A - Marked Patrol
 23:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2008,HONDA,GRAY,Citation,Transportation Article,No,WHITE,F,SILVER SPRING,MD,MD,A - Marked Patrol
-23:00:00,6th district Gaithersburg / Montgomery Village,MINOR INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,BLACK,F,GAITHERSBURG,MD,MN,A - Marked Patrol
+23:00:00,6th district Gaithersburg / Montgomery Village,MINOR INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,BLACK,F,GAITHERSBURG,MD,MN,A - Marked Patrol
 21:00:00,1st district Rockville,ACCIDENT RELATED,MD,02 - Automobile,2011,AUDI,BLACK,Citation,Transportation Article,No,ASIAN,M,POTOMAC,MD,MD,A - Marked Patrol
 23:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2006,MERCEDEZ,BLACK,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
 14:00:00,3rd district Silver Spring,RECKLESS DRIVING,MD,02 - Automobile,2008,BUICK,WHITE,Citation,Transportation Article,Yes,BLACK,M,BALTIMORE,MD,MD,A - Marked Patrol
@@ -389,7 +389,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 15:00:00,6th district Gaithersburg / Montgomery Village,MINOR INFRACTION,MD,05 - Light Duty Truck,2002,FORD,MAROON,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
 0:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2007,JEEP,WHITE,Citation,Transportation Article,No,HISPANIC,M,HYATTSVILLE,MD,MD,A - Marked Patrol
 6:00:00,4th district Wheaton,SPEEDING,MD,03 - Station Wagon,2009,FORD,BLACK,Citation,Transportation Article,No,WHITE,F,MOUNT AIRY,MD,MD,Q - Marked Laser
-10:00:00,4th district Wheaton,SPEEDING,MD,02 - Automobile,2010,TOYT,,Citation,Transportation Article,No,WHITE,F,JEFFERSON,MD,MD,Q - Marked Laser
+10:00:00,4th district Wheaton,SPEEDING,MD,02 - Automobile,2010,TOYT,__EMPTY__,Citation,Transportation Article,No,WHITE,F,JEFFERSON,MD,MD,Q - Marked Laser
 21:00:00,6th district Gaithersburg / Montgomery Village,ACCIDENT RELATED,MD,02 - Automobile,2006,TOYOTA,SILVER,Citation,Transportation Article,No,WHITE,M,N POTOMAC,MD,MD,A - Marked Patrol
 18:00:00,5th district Germantown,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2004,FORD,GREEN,Citation,Transportation Article,No,BLACK,M,GERMANTOWN,MD,MD,A - Marked Patrol
 17:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1994,TOYOTA,BROWN,Citation,Transportation Article,No,HISPANIC,M,HYATTSVILLE,MD,MD,A - Marked Patrol
@@ -406,7 +406,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 21:00:00,1st district Rockville,RECKLESS DRIVING,MD,28 - Other,2004,TOYT,GOLD,Citation,Transportation Article,No,WHITE,F,POTOMAC,MD,MD,A - Marked Patrol
 0:00:00,2nd district Bethesda,RECKLESS DRIVING,MD,02 - Automobile,1996,MAZDA,GREEN,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
 0:00:00,4th district Wheaton,MINOR INFRACTION,MD,02 - Automobile,2005,TOYOTA,MAROON,Citation,Transportation Article,No,HISPANIC,M,HYATTSVILLE,MD,MD,A - Marked Patrol
-10:00:00,6th district Gaithersburg / Montgomery Village,MINOR INFRACTION,VA,02 - Automobile,2005,FORD,WHITE,Citation,Transportation Article,No,WHITE,F,STERLING,VA,,A - Marked Patrol
+10:00:00,6th district Gaithersburg / Montgomery Village,MINOR INFRACTION,VA,02 - Automobile,2005,FORD,WHITE,Citation,Transportation Article,No,WHITE,F,STERLING,VA,__EMPTY__,A - Marked Patrol
 5:00:00,1st district Rockville,SPEEDING,NY,02 - Automobile,2011,HYUNDAI,CREAM,Citation,Transportation Article,No,BLACK,M,WASHINGTON DC,DC,VA,M - Marked (Off-Duty)
 14:00:00,1st district Rockville,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1999,TOYOTA,GOLD,Citation,Transportation Article,No,WHITE,F,BETHESDA,MD,MD,A - Marked Patrol
 13:00:00,1st district Rockville,RECKLESS DRIVING,MD,02 - Automobile,2000,ACURA,GOLD,Warning,Transportation Article,No,WHITE,F,N BETHESDA,MD,MD,A - Marked Patrol
@@ -430,7 +430,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 22:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2005,CHEVROLET,GRAY,Citation,Transportation Article,No,HISPANIC,M,GAITHERSBURG,MD,MD,A - Marked Patrol
 16:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1997,HOND,BEIGE,Citation,Transportation Article,No,BLACK,M,GREENBELT,MD,MD,A - Marked Patrol
 23:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2010,MERC,BLUE,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
-11:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2002,ACURA,WHITE,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,,A - Marked Patrol
+11:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2002,ACURA,WHITE,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,__EMPTY__,A - Marked Patrol
 21:00:00,4th district Wheaton,SPEEDING,VA,02 - Automobile,1997,DODGE,BEIGE,Citation,Transportation Article,Yes,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
 0:00:00,6th district Gaithersburg / Montgomery Village,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2004,HOND,SILVER,Citation,Transportation Article,No,ASIAN,F,GAITHERSBURG,MD,MD,A - Marked Patrol
 15:00:00,3rd district Silver Spring,MINOR INFRACTION,MD,02 - Automobile,2007,FORD,WHITE,Citation,Transportation Article,No,HISPANIC,M,GERMANTOWN,MD,MD,A - Marked Patrol
@@ -457,7 +457,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 6:00:00,6th district Gaithersburg / Montgomery Village,SPEEDING,MD,02 - Automobile,1999,CHEV,GREEN,Citation,Transportation Article,No,OTHER,F,DAMASCUS,MD,MD,A - Marked Patrol
 22:00:00,1st district Rockville,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,2005,HONDA,GRAY,Citation,Transportation Article,No,HISPANIC,F,ROCKVILLE,MD,MD,A - Marked Patrol
 23:00:00,1st district Rockville,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2012,MERCEDEZ,SILVER,Citation,Transportation Article,No,WHITE,M,POTOMAC,MD,MD,A - Marked Patrol
-10:00:00,4th district Wheaton,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,1994,FORD,WHITE,Citation,Transportation Article,No,HISPANIC,M,MT RAINER,MD,,A - Marked Patrol
+10:00:00,4th district Wheaton,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,1994,FORD,WHITE,Citation,Transportation Article,No,HISPANIC,M,MT RAINER,MD,__EMPTY__,A - Marked Patrol
 23:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1996,OLDSMOBILE,MAROON,Citation,Transportation Article,No,BLACK,F,SILVER SPRING,MD,VA,A - Marked Patrol
 14:00:00,6th district Gaithersburg / Montgomery Village,DISOBEY TRAFFIC CONTROL,NJ,03 - Station Wagon,2008,TOYOTA,SILVER,Citation,Transportation Article,No,WHITE,F,LAMBERTVILLE,NJ,NJ,A - Marked Patrol
 23:00:00,6th district Gaithersburg / Montgomery Village,SPEEDING,MD,02 - Automobile,2004,FORD,SILVER,Warning,Transportation Article,No,BLACK,M,MONTGOMERY VILLAGE,MD,MD,A - Marked Patrol
@@ -484,7 +484,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 7:00:00,2nd district Bethesda,MINOR INFRACTION,MD,02 - Automobile,2005,ACURA,GRAY,Citation,Transportation Article,No,WHITE,M,BETHESDA,MD,MD,L - Motorcycle
 1:00:00,5th district Germantown,SPEEDING,MD,02 - Automobile,2006,MAZD,SILVER,Citation,Transportation Article,No,WHITE,F,GAITHERSBURG,MD,MD,Q - Marked Laser
 18:00:00,1st district Rockville,MINOR INFRACTION,MD,02 - Automobile,2005,HYUNDAI,TAN,Citation,Transportation Article,No,WHITE,F,ROCKVILLE,MD,MD,A - Marked Patrol
-17:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,WHITE,M,SILVER SPRING,MD,MD,B - Unmarked Patrol
+17:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,WHITE,M,SILVER SPRING,MD,MD,B - Unmarked Patrol
 18:00:00,5th district Germantown,SPEEDING,MD,08 - Recreational Vehicle,2011,HYUNDAI,GRAY,Citation,Transportation Article,No,WHITE,M,GAITHERSBURG,MD,MD,A - Marked Patrol
 14:00:00,2nd district Bethesda,SPEEDING,MD,02 - Automobile,2005,NISSAN,SILVER,Citation,Transportation Article,No,WHITE,M,SILVER SPRING,MD,MD,Q - Marked Laser
 1:00:00,3rd district Silver Spring,IMPAIRED BY DRUGS OR ALCOHOL,DC,28 - Other,2002,MERZ,BLACK,Citation,Transportation Article,No,BLACK,F,WASHINGTON,DC,DC,A - Marked Patrol
@@ -545,7 +545,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 20:00:00,1st district Rockville,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2005,CADI,BLACK,Citation,Transportation Article,No,WHITE,M,POINT OF ROCK,MD,WV,A - Marked Patrol
 18:00:00,2nd district Bethesda,MINOR INFRACTION,MD,05 - Light Duty Truck,1997,JEEP,BLUE,Citation,Transportation Article,No,WHITE,M,SILVER SPRING,MD,MD,A - Marked Patrol
 0:00:00,5th district Germantown,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2004,INFINITY,SILVER,Citation,Transportation Article,No,WHITE,M,GERMANTOWN,MD,MD,A - Marked Patrol
-14:00:00,Headquarters and Special Operations,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,O - Foot Patrol
+14:00:00,Headquarters and Special Operations,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,O - Foot Patrol
 23:00:00,2nd district Bethesda,VEHICLE OR EQUIPMENT VIOLATION,VA,02 - Automobile,2011,FORD,BLUE,Warning,Transportation Article,No,ASIAN,M,HENRICO,VA,VA,A - Marked Patrol
 23:00:00,4th district Wheaton,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2013,FORD,SILVER,Warning,Transportation Article,No,BLACK,F,SILVER SPRING,MD,MD,A - Marked Patrol
 8:00:00,1st district Rockville,LICENSE OR REGISTRATION RELATED,VA,28 - Other,2002,FORD,WHITE,Citation,Transportation Article,No,HISPANIC,M,ROCKVILLE,MD,MD,A - Marked Patrol
@@ -651,7 +651,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 9:00:00,Headquarters and Special Operations,PHONE RELATED,MD,02 - Automobile,2005,TOYOTA,GOLD,Citation,Transportation Article,No,WHITE,F,FREDERICK,MD,MD,B - Unmarked Patrol
 8:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2003,FORD,WHITE,Citation,Transportation Article,No,BLACK,M,BOISE,MD,MD,A - Marked Patrol
 1:00:00,6th district Gaithersburg / Montgomery Village,RECKLESS DRIVING,MD,02 - Automobile,2012,VOLKSWAGON,BLACK,Warning,Transportation Article,No,HISPANIC,M,SEVERN,MD,MD,A - Marked Patrol
-23:00:00,3rd district Silver Spring,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,HISPANIC,M,TAKOMA PARK,MD,XX,A - Marked Patrol
+23:00:00,3rd district Silver Spring,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,HISPANIC,M,TAKOMA PARK,MD,XX,A - Marked Patrol
 21:00:00,4th district Wheaton,IMPAIRED BY DRUGS OR ALCOHOL,MD,05 - Light Duty Truck,1999,FORD,BLUE,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
 9:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2014,JEEP,BLACK,Citation,Transportation Article,No,BLACK,F,BURTONSVILLE,MD,MD,A - Marked Patrol
 22:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,01 - Motorcycle,2002,FORD,WHITE,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
@@ -754,12 +754,12 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 1:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2002,INFINITI,BEIGE,Citation,Transportation Article,No,HISPANIC,M,LANHAM,MD,MD,A - Marked Patrol
 15:00:00,6th district Gaithersburg / Montgomery Village,ACCIDENT RELATED,MD,02 - Automobile,1994,CHRYSLER,GREEN,Citation,Transportation Article,Yes,WHITE,M,GERMANTOWN,MD,MD,A - Marked Patrol
 17:00:00,1st district Rockville,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2004,CHEV,TAN,Citation,Transportation Article,No,WHITE,M,ROCKVILLE,MD,MD,A - Marked Patrol
-22:00:00,3rd district Silver Spring,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
+22:00:00,3rd district Silver Spring,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
 10:00:00,4th district Wheaton,MINOR INFRACTION,MD,02 - Automobile,2014,HONDA,BLUE DARK,Citation,Transportation Article,No,HISPANIC,F,SILVER SPRING,MD,MD,A - Marked Patrol
 23:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1998,HONDA,BLUE,Citation,Transportation Article,No,OTHER,M,SILVER SPRING,MD,MD,A - Marked Patrol
 22:00:00,1st district Rockville,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2006,HYUNDAI,SILVER,Citation,Transportation Article,No,WHITE,F,SILVER SPRING,MD,MD,A - Marked Patrol
 1:00:00,2nd district Bethesda,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2011,LEXUS,GOLD,Citation,Transportation Article,No,OTHER,M,LAYTONSVILLE,MD,MD,A - Marked Patrol
-23:00:00,3rd district Silver Spring,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,ASIAN,M,SILVER SPRING,MD,MD,A - Marked Patrol
+23:00:00,3rd district Silver Spring,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,ASIAN,M,SILVER SPRING,MD,MD,A - Marked Patrol
 14:00:00,4th district Wheaton,SPEEDING,MD,02 - Automobile,2006,TOYOTA,SILVER,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
 23:00:00,4th district Wheaton,MINOR INFRACTION,MD,02 - Automobile,2007,HONDA,BLUE,Warning,Transportation Article,No,ASIAN,F,SILVER SPRING,MD,MD,A - Marked Patrol
 23:00:00,3rd district Silver Spring,DISOBEY TRAFFIC CONTROL,DC,02 - Automobile,1997,TOYOTA,GREEN,Citation,Transportation Article,No,HISPANIC,M,WASHINGTON,DC,DC,A - Marked Patrol
@@ -926,12 +926,12 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 15:00:00,1st district Rockville,PHONE RELATED,MD,02 - Automobile,1998,DODGE,BLUE,Citation,Transportation Article,No,HISPANIC,F,ADELPHI,MD,MD,A - Marked Patrol
 21:00:00,1st district Rockville,RECKLESS DRIVING,MD,28 - Other,2004,TOYT,GOLD,Citation,Transportation Article,No,WHITE,F,POTOMAC,MD,MD,A - Marked Patrol
 0:00:00,2nd district Bethesda,SPEEDING,MD,02 - Automobile,1996,MAZDA,GREEN,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
-22:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,DC,02 - Automobile,1997,TOYOTA,WHITE,Citation,Transportation Article,No,HISPANIC,M,WASHINGTON,DC,,A - Marked Patrol
+22:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,DC,02 - Automobile,1997,TOYOTA,WHITE,Citation,Transportation Article,No,HISPANIC,M,WASHINGTON,DC,__EMPTY__,A - Marked Patrol
 10:00:00,1st district Rockville,MINOR INFRACTION,MD,02 - Automobile,2009,JEEP,SILVER,Citation,Transportation Article,No,WHITE,F,WHEATON,MD,MD,M - Marked (Off-Duty)
 21:00:00,1st district Rockville,NOISE RELATED,FL,02 - Automobile,1985,NISSAN,WHITE,Citation,Transportation Article,No,WHITE,M,GAITHERSBURG,MD,MD,A - Marked Patrol
 1:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2007,TOYOTA,GRAY,Citation,Transportation Article,No,WHITE,M,SILVER SPRING,MD,MD,A - Marked Patrol
 3:00:00,Headquarters and Special Operations,MINOR INFRACTION,DC,02 - Automobile,2010,BUICK,WHITE,Warning,Transportation Article,No,BLACK,M,GERMANTOWN,MD,MD,A - Marked Patrol
-8:00:00,6th district Gaithersburg / Montgomery Village,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2007,NISS,BLUE DARK,ESERO,,No,OTHER,M,GAITHERSBURG,MD,MD,A - Marked Patrol
+8:00:00,6th district Gaithersburg / Montgomery Village,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2007,NISS,BLUE DARK,ESERO,__EMPTY__,No,OTHER,M,GAITHERSBURG,MD,MD,A - Marked Patrol
 2:00:00,2nd district Bethesda,ACCIDENT RELATED,MD,02 - Automobile,1997,FORD,RED,Citation,Transportation Article,No,BLACK,M,ROCKVILLE,MD,MD,A - Marked Patrol
 18:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2000,DODGE,MAROON,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
 23:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2000,JEEP,BRONZE,Citation,Transportation Article,No,HISPANIC,F,GAITHERSBURG,MD,MD,A - Marked Patrol
@@ -941,32 +941,32 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 5:00:00,3rd district Silver Spring,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,2001,NISSAN,BLACK,Citation,Transportation Article,No,HISPANIC,M,OXON HILL,MD,MD,A - Marked Patrol
 0:00:00,6th district Gaithersburg / Montgomery Village,SPEEDING,MD,02 - Automobile,2005,FORD,GRAY,Citation,Transportation Article,No,WHITE,F,SYKESVILLE,MD,MD,A - Marked Patrol
 15:00:00,3rd district Silver Spring,MINOR INFRACTION,MD,02 - Automobile,2007,FORD,WHITE,Citation,Transportation Article,No,HISPANIC,M,GERMANTOWN,MD,MD,A - Marked Patrol
-23:00:00,1st district Rockville,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2006,FORD,RED,ESERO,,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
-1:00:00,6th district Gaithersburg / Montgomery Village,VEHICLE OR EQUIPMENT VIOLATION,MD,05 - Light Duty Truck,2005,FORD,RED,ESERO,,No,HISPANIC,M,CLARKSBURG,MD,MD,A - Marked Patrol
-23:00:00,5th district Germantown,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2007,MERZ,BLACK,ESERO,,No,BLACK,M,EVERETT,WA,WA,A - Marked Patrol
-22:00:00,2nd district Bethesda,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2005,VOLK,RED,ESERO,,No,WHITE,M,BETHESDA,MD,MD,A - Marked Patrol
+23:00:00,1st district Rockville,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2006,FORD,RED,ESERO,__EMPTY__,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
+1:00:00,6th district Gaithersburg / Montgomery Village,VEHICLE OR EQUIPMENT VIOLATION,MD,05 - Light Duty Truck,2005,FORD,RED,ESERO,__EMPTY__,No,HISPANIC,M,CLARKSBURG,MD,MD,A - Marked Patrol
+23:00:00,5th district Germantown,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2007,MERZ,BLACK,ESERO,__EMPTY__,No,BLACK,M,EVERETT,WA,WA,A - Marked Patrol
+22:00:00,2nd district Bethesda,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2005,VOLK,RED,ESERO,__EMPTY__,No,WHITE,M,BETHESDA,MD,MD,A - Marked Patrol
 23:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1998,HONDA,SILVER,Citation,Transportation Article,No,HISPANIC,M,GAITHERSBURG,MD,MD,A - Marked Patrol
-1:00:00,6th district Gaithersburg / Montgomery Village,MINOR INFRACTION,MD,02 - Automobile,2012,HOND,BLACK,ESERO,,No,WHITE,F,GAITHERSBURG,MD,MD,A - Marked Patrol
-23:00:00,2nd district Bethesda,MINOR INFRACTION,MD,02 - Automobile,2011,SUBA,GRAY,ESERO,,No,WHITE,M,CABIN JOHN,MD,MD,A - Marked Patrol
+1:00:00,6th district Gaithersburg / Montgomery Village,MINOR INFRACTION,MD,02 - Automobile,2012,HOND,BLACK,ESERO,__EMPTY__,No,WHITE,F,GAITHERSBURG,MD,MD,A - Marked Patrol
+23:00:00,2nd district Bethesda,MINOR INFRACTION,MD,02 - Automobile,2011,SUBA,GRAY,ESERO,__EMPTY__,No,WHITE,M,CABIN JOHN,MD,MD,A - Marked Patrol
 16:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1997,HOND,BEIGE,Citation,Transportation Article,No,BLACK,M,GREENBELT,MD,MD,A - Marked Patrol
 13:00:00,4th district Wheaton,MINOR INFRACTION,MD,02 - Automobile,2010,TOYOTA,GRAY,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
 20:00:00,1st district Rockville,PLATE VIOLATION,GA,02 - Automobile,2011,CHRYSLER,SILVER,Citation,Transportation Article,No,WHITE,F,ROCKVILLE,MD,GA,A - Marked Patrol
 8:00:00,1st district Rockville,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2003,HONDA,SILVER,Citation,Transportation Article,No,WHITE,F,GAITHERSBURG,MD,MD,A - Marked Patrol
 20:00:00,2nd district Bethesda,SPEEDING,MD,02 - Automobile,2013,BMW,SILVER,Citation,Transportation Article,No,WHITE,M,POTOMAC,MD,MD,A - Marked Patrol
-11:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2002,ACURA,WHITE,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,,A - Marked Patrol
+11:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2002,ACURA,WHITE,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,__EMPTY__,A - Marked Patrol
 12:00:00,4th district Wheaton,SPEEDING,MD,02 - Automobile,2006,CRYSTLER,SILVER,Citation,Transportation Article,Yes,WHITE,M,SILVER SPRING,MD,MD,A - Marked Patrol
 18:00:00,Headquarters and Special Operations,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,1997,LEXUS,WHITE,Citation,Transportation Article,No,WHITE,F,SILVER SPRING,MD,MD,A - Marked Patrol
-1:00:00,2nd district Bethesda,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2013,TOYT,GRAY,ESERO,,No,BLACK,M,RIVERDALE,MD,MD,A - Marked Patrol
+1:00:00,2nd district Bethesda,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2013,TOYT,GRAY,ESERO,__EMPTY__,No,BLACK,M,RIVERDALE,MD,MD,A - Marked Patrol
 10:00:00,3rd district Silver Spring,ACCIDENT RELATED,MD,02 - Automobile,2002,TOYOTA,TAN,Citation,Transportation Article,Yes,WHITE,M,OLNEY,MD,MD,A - Marked Patrol
-0:00:00,4th district Wheaton,MINOR INFRACTION,MD,02 - Automobile,2003,FORD,WHITE,ESERO,,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
-0:00:00,4th district Wheaton,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2003,FORD,WHITE,ESERO,,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
-23:00:00,6th district Gaithersburg / Montgomery Village,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2005,ACUR,BLACK,ESERO,,No,HISPANIC,M,GAITHERSBURG,MD,MD,A - Marked Patrol
-23:00:00,6th district Gaithersburg / Montgomery Village,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2015,NISSAN,GRAY,ESERO,,No,WHITE,M,MONTGOMERY VILLAGE,MD,MD,A - Marked Patrol
-23:00:00,5th district Germantown,MINOR INFRACTION,MD,02 - Automobile,2007,MERZ,BLACK,ESERO,,No,BLACK,F,GERMANTOWN,MD,MD,A - Marked Patrol
-23:00:00,2nd district Bethesda,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2003,VOLK,BLUE,ESERO,,No,WHITE,M,GAITHERSBURG,MD,MD,A - Marked Patrol
-21:00:00,2nd district Bethesda,MINOR INFRACTION,MD,02 - Automobile,2012,HONDA,BLACK,ESERO,,No,WHITE,M,KENSINGTON,MD,MD,A - Marked Patrol
-21:00:00,2nd district Bethesda,MINOR INFRACTION,MD,02 - Automobile,2002,TOYOTA,SILVER,ESERO,,No,WHITE,F,CHEVY CHASE,MD,MD,A - Marked Patrol
-2:00:00,3rd district Silver Spring,MINOR INFRACTION,MD,02 - Automobile,2002,FORD,BEIGE,ESERO,,No,BLACK,M,TAKOMA PARK,MD,MD,A - Marked Patrol
+0:00:00,4th district Wheaton,MINOR INFRACTION,MD,02 - Automobile,2003,FORD,WHITE,ESERO,__EMPTY__,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
+0:00:00,4th district Wheaton,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2003,FORD,WHITE,ESERO,__EMPTY__,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
+23:00:00,6th district Gaithersburg / Montgomery Village,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2005,ACUR,BLACK,ESERO,__EMPTY__,No,HISPANIC,M,GAITHERSBURG,MD,MD,A - Marked Patrol
+23:00:00,6th district Gaithersburg / Montgomery Village,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2015,NISSAN,GRAY,ESERO,__EMPTY__,No,WHITE,M,MONTGOMERY VILLAGE,MD,MD,A - Marked Patrol
+23:00:00,5th district Germantown,MINOR INFRACTION,MD,02 - Automobile,2007,MERZ,BLACK,ESERO,__EMPTY__,No,BLACK,F,GERMANTOWN,MD,MD,A - Marked Patrol
+23:00:00,2nd district Bethesda,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2003,VOLK,BLUE,ESERO,__EMPTY__,No,WHITE,M,GAITHERSBURG,MD,MD,A - Marked Patrol
+21:00:00,2nd district Bethesda,MINOR INFRACTION,MD,02 - Automobile,2012,HONDA,BLACK,ESERO,__EMPTY__,No,WHITE,M,KENSINGTON,MD,MD,A - Marked Patrol
+21:00:00,2nd district Bethesda,MINOR INFRACTION,MD,02 - Automobile,2002,TOYOTA,SILVER,ESERO,__EMPTY__,No,WHITE,F,CHEVY CHASE,MD,MD,A - Marked Patrol
+2:00:00,3rd district Silver Spring,MINOR INFRACTION,MD,02 - Automobile,2002,FORD,BEIGE,ESERO,__EMPTY__,No,BLACK,M,TAKOMA PARK,MD,MD,A - Marked Patrol
 9:00:00,5th district Germantown,MINOR INFRACTION,MD,02 - Automobile,2008,TOYOTA,WHITE,Citation,Transportation Article,No,HISPANIC,F,GERMANTOWN,MD,MD,A - Marked Patrol
 20:00:00,1st district Rockville,SPEEDING,MD,02 - Automobile,1995,HOND,BLACK,Citation,Transportation Article,No,WHITE,F,DERWOOD,MD,MD,Q - Marked Laser
 9:00:00,2nd district Bethesda,MINOR INFRACTION,MD,02 - Automobile,2000,MERZ,TAN,Citation,Transportation Article,No,WHITE,M,KENSINGTON,MD,MD,A - Marked Patrol
@@ -1002,13 +1002,13 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 20:00:00,3rd district Silver Spring,PLATE VIOLATION,MD,02 - Automobile,2001,MERCEDES,BLACK,Citation,Transportation Article,No,WHITE,M,KENSINGTON,MD,MD,A - Marked Patrol
 3:00:00,6th district Gaithersburg / Montgomery Village,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2005,HONDA,SILVER,Citation,Transportation Article,No,WHITE,F,GAITHERSBURG,MD,MD,A - Marked Patrol
 1:00:00,4th district Wheaton,VEHICLE OR EQUIPMENT VIOLATION,MD,28 - Other,2010,RIELLA,WHITE,Citation,Transportation Article,No,WHITE,M,BROOKEVILLE,MD,MD,A - Marked Patrol
-17:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,BLACK,F,TAKOMA PARK,MD,MD,B - Unmarked Patrol
+17:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,BLACK,F,TAKOMA PARK,MD,MD,B - Unmarked Patrol
 13:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2012,NISSAN,GRAY,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
 13:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2012,NISSAN,GRAY,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
 1:00:00,3rd district Silver Spring,RECKLESS DRIVING,DC,28 - Other,2002,MERZ,BLACK,Citation,Transportation Article,No,BLACK,F,WASHINGTON,DC,DC,A - Marked Patrol
 0:00:00,4th district Wheaton,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,2006,ACUR,WHITE,Citation,Transportation Article,No,WHITE,F,ADELPHI,MD,MD,A - Marked Patrol
 22:00:00,Headquarters and Special Operations,PAPERWORK RELATED,MD,02 - Automobile,2005,CHEVY,SILVER,Citation,Transportation Article,No,BLACK,M,DERWOOD,MD,MD,A - Marked Patrol
-11:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,HISPANIC,M,ADELPHI,MD,MD,A - Marked Patrol
+11:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,HISPANIC,M,ADELPHI,MD,MD,A - Marked Patrol
 0:00:00,4th district Wheaton,PLATE VIOLATION,VA,02 - Automobile,2002,FORD,BLACK,Citation,Transportation Article,No,HISPANIC,M,ROCKVILLE,MD,MD,A - Marked Patrol
 22:00:00,5th district Germantown,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,1997,HONDA,SILVER,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
 1:00:00,5th district Germantown,RECKLESS DRIVING,MD,02 - Automobile,1990,FORD,BLUE,Citation,Transportation Article,No,HISPANIC,M,GERMANTOWN,MD,MD,A - Marked Patrol
@@ -1055,7 +1055,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 17:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2008,LEXUS,MAROON,Citation,Transportation Article,No,BLACK,F,BETHESDA,MD,MD,A - Marked Patrol
 12:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1996,FORD,BLUE,Citation,Transportation Article,No,HISPANIC,M,ROCKVILLE,MD,MD,A - Marked Patrol
 5:00:00,1st district Rockville,MINOR INFRACTION,VA,02 - Automobile,1998,NISSAN,BLACK,Citation,Transportation Article,No,HISPANIC,M,FALLS CHURCH,VA,VA,A - Marked Patrol
-9:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,BLACK,F,GAITHERSBURG,MD,MD,A - Marked Patrol
+9:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,BLACK,F,GAITHERSBURG,MD,MD,A - Marked Patrol
 16:00:00,2nd district Bethesda,MINOR INFRACTION,MD,03 - Station Wagon,2010,TOYOTA,BLACK,Citation,Transportation Article,No,WHITE,M,PALM BCH GRDNS,FL,FL,A - Marked Patrol
 3:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2004,TOYOTA,BLACK,Citation,Transportation Article,No,BLACK,F,SILVER SPRING,MD,MD,A - Marked Patrol
 1:00:00,2nd district Bethesda,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2008,VOLK,SILVER,Citation,Transportation Article,No,HISPANIC,F,BETHESDA,MD,MD,A - Marked Patrol
@@ -1073,7 +1073,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 10:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2004,PONT,BLACK,Citation,Transportation Article,No,BLACK,F,SILVER SPRING,MD,MD,R - Unmarked Laser
 12:00:00,2nd district Bethesda,SPEEDING,MD,02 - Automobile,2007,DODGE,BLUE DARK,Citation,Transportation Article,No,HISPANIC,M,GREENBELT,MD,MD,Q - Marked Laser
 20:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1998,ACUR,RED,Citation,Transportation Article,No,WHITE,M,GAITHERSBURG,MD,MD,A - Marked Patrol
-12:00:00,Headquarters and Special Operations,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,BLACK,M,WASHINGTON,DC,DC,O - Foot Patrol
+12:00:00,Headquarters and Special Operations,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,BLACK,M,WASHINGTON,DC,DC,O - Foot Patrol
 18:00:00,1st district Rockville,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2011,TOYOTA,GREEN,Citation,Transportation Article,Yes,WHITE,M,BALTIMORE,MD,MD,A - Marked Patrol
 21:00:00,3rd district Silver Spring,MINOR INFRACTION,VA,02 - Automobile,2013,CADILLAC,SILVER,Citation,Transportation Article,No,BLACK,M,WASHINGTON,DC,DC,A - Marked Patrol
 14:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2010,TOYT,BLUE,Citation,Transportation Article,No,OTHER,M,SILVER SPRING,MD,XX,A - Marked Patrol
@@ -1447,7 +1447,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 21:00:00,1st district Rockville,RECKLESS DRIVING,MD,28 - Other,2004,TOYT,GOLD,Citation,Transportation Article,No,WHITE,F,POTOMAC,MD,MD,A - Marked Patrol
 0:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1996,MAZDA,BLUE,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
 0:00:00,4th district Wheaton,ACCIDENT RELATED,MD,02 - Automobile,2005,TOYOTA,MAROON,Citation,Transportation Article,No,HISPANIC,M,HYATTSVILLE,MD,MD,A - Marked Patrol
-10:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,VA,02 - Automobile,2005,FORD,WHITE,Citation,Transportation Article,No,WHITE,F,STERLING,VA,,A - Marked Patrol
+10:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,VA,02 - Automobile,2005,FORD,WHITE,Citation,Transportation Article,No,WHITE,F,STERLING,VA,__EMPTY__,A - Marked Patrol
 11:00:00,1st district Rockville,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1999,FORD,SILVER,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
 21:00:00,2nd district Bethesda,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2000,HONDA,GREEN,Citation,Transportation Article,No,WHITE,M,SILVER SPRING,MD,MD,B - Unmarked Patrol
 21:00:00,2nd district Bethesda,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2000,HONDA,GREEN,Citation,Transportation Article,No,WHITE,M,SILVER SPRING,MD,MD,B - Unmarked Patrol
@@ -1480,7 +1480,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 13:00:00,4th district Wheaton,RECKLESS DRIVING,MD,02 - Automobile,2010,TOYOTA,GRAY,Citation,Transportation Article,No,BLACK,F,BOWIE,MD,MD,A - Marked Patrol
 19:00:00,1st district Rockville,PLATE VIOLATION,MD,05 - Light Duty Truck,2002,CHEVY,WHITE,Citation,Transportation Article,No,ASIAN,M,GLEN BURNIE,MD,MD,A - Marked Patrol
 10:00:00,3rd district Silver Spring,ACCIDENT RELATED,MD,02 - Automobile,2002,TOYOTA,TAN,Citation,Transportation Article,Yes,WHITE,M,OLNEY,MD,MD,A - Marked Patrol
-9:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,BLACK,M,OXON HILL,MD,MD,A - Marked Patrol
+9:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,BLACK,M,OXON HILL,MD,MD,A - Marked Patrol
 8:00:00,1st district Rockville,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2003,HONDA,SILVER,Citation,Transportation Article,No,WHITE,F,GAITHERSBURG,MD,MD,A - Marked Patrol
 9:00:00,2nd district Bethesda,MINOR INFRACTION,DC,05 - Light Duty Truck,2001,MAZD,SILVER,Citation,Transportation Article,No,BLACK,F,WASHINGTON,DC,DC,A - Marked Patrol
 17:00:00,6th district Gaithersburg / Montgomery Village,MINOR INFRACTION,MD,02 - Automobile,2007,HYUN,BLACK,Citation,Transportation Article,Yes,WHITE,F,ROCKVILLE,MD,MD,A - Marked Patrol
@@ -1499,7 +1499,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 19:00:00,2nd district Bethesda,SPEEDING,MD,02 - Automobile,2002,HONDA,SILVER,Citation,Transportation Article,Yes,WHITE,F,KENSINGTON,MD,MD,A - Marked Patrol
 23:00:00,1st district Rockville,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2012,MERCEDEZ,SILVER,Citation,Transportation Article,No,WHITE,M,POTOMAC,MD,MD,A - Marked Patrol
 17:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2004,TOYOTA,RED,Citation,Transportation Article,No,HISPANIC,F,ROCKVILLE,MD,MD,A - Marked Patrol
-10:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1994,FORD,WHITE,Citation,Transportation Article,No,HISPANIC,M,MT RAINER,MD,,A - Marked Patrol
+10:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1994,FORD,WHITE,Citation,Transportation Article,No,HISPANIC,M,MT RAINER,MD,__EMPTY__,A - Marked Patrol
 2:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,VA,02 - Automobile,2004,NISSAN,SILVER,Citation,Transportation Article,No,BLACK,M,GERMANTOWN,MD,MD,A - Marked Patrol
 21:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,WV,02 - Automobile,2009,NISSAN,WHITE,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
 15:00:00,2nd district Bethesda,SPEEDING,MD,05 - Light Duty Truck,2015,CADILLAC,BLACK,Citation,Transportation Article,Yes,WHITE,F,BURTONSVILLE,MD,MD,A - Marked Patrol
@@ -1524,7 +1524,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 16:00:00,3rd district Silver Spring,DRIVING UNINSURED VEHICLE,MD,02 - Automobile,2000,TOYOTA,TAN,Citation,Transportation Article,No,BLACK,F,SILVER SPRING,MD,MD,A - Marked Patrol
 3:00:00,1st district Rockville,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2000,HYUN,GREEN DK,Citation,Transportation Article,Yes,WHITE,M,RIVERDALE,MD,MD,A - Marked Patrol
 19:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2009,HONDA,BLUE LIGHT,Citation,Transportation Article,No,WHITE,F,BETHESDA,MD,MD,A - Marked Patrol
-15:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,WHITE,F,SILVER SPRING,MD,MD,B - Unmarked Patrol
+15:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,WHITE,F,SILVER SPRING,MD,MD,B - Unmarked Patrol
 17:00:00,5th district Germantown,PLATE VIOLATION,MD,02 - Automobile,2002,TOYOTA,GREEN,Citation,Transportation Article,No,WHITE,F,DAMASCUS,MD,MD,A - Marked Patrol
 14:00:00,2nd district Bethesda,SPEEDING,MD,02 - Automobile,2011,FORD,BLUE,Citation,Transportation Article,No,WHITE,M,ROCKVILLE,MD,MD,Q - Marked Laser
 21:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2004,INFINITI,WHITE,Citation,Transportation Article,No,HISPANIC,M,ODENTON,MD,MD,A - Marked Patrol
@@ -1749,7 +1749,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 0:00:00,2nd district Bethesda,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2008,HONDA,GREEN,Citation,Transportation Article,Yes,WHITE,F,BOYDS,MD,MD,A - Marked Patrol
 4:00:00,6th district Gaithersburg / Montgomery Village,RECKLESS DRIVING,MD,02 - Automobile,1999,MERCURY,GRAY,Citation,Transportation Article,No,BLACK,M,POOLESVILLE,MD,MD,A - Marked Patrol
 8:00:00,6th district Gaithersburg / Montgomery Village,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,1997,HONDA,GREEN,Citation,Transportation Article,No,ASIAN,M,SILVER SPRING,MD,MD,A - Marked Patrol
-9:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,ASIAN,F,ROCKVILLE,MD,MD,A - Marked Patrol
+9:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,ASIAN,F,ROCKVILLE,MD,MD,A - Marked Patrol
 0:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1990,LEXUS,TAN,Citation,Transportation Article,No,WHITE,M,GERMANTOWN,MD,MD,A - Marked Patrol
 3:00:00,6th district Gaithersburg / Montgomery Village,ACCIDENT RELATED,MD,02 - Automobile,2006,CHRY,MAROON,Citation,Transportation Article,No,WHITE,M,GAITHERSBURG,MD,MD,A - Marked Patrol
 13:00:00,6th district Gaithersburg / Montgomery Village,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2000,NISSAN,BLACK,Citation,Transportation Article,No,BLACK,F,GAITHERSBURG,MD,MD,A - Marked Patrol
@@ -1828,7 +1828,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 15:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2006,FORD,WHITE,Citation,Transportation Article,No,BLACK,F,ROCKVILLE,MD,MD,A - Marked Patrol
 1:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1999,CHEVROLET,BLACK,Citation,Transportation Article,No,WHITE,M,GERMANTOWN,MD,MD,A - Marked Patrol
 21:00:00,1st district Rockville,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2012,DODGE,WHITE,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
-10:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,BLACK,F,ROCKVILLE,MD,MD,A - Marked Patrol
+10:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,BLACK,F,ROCKVILLE,MD,MD,A - Marked Patrol
 20:00:00,3rd district Silver Spring,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,2006,NISSAN,SILVER,Citation,Transportation Article,No,HISPANIC,M,LAUREL,MD,MD,A - Marked Patrol
 22:00:00,3rd district Silver Spring,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2000,BMW,BLUE,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
 14:00:00,4th district Wheaton,PHONE RELATED,MD,02 - Automobile,2005,CHRY,BLUE,Citation,Transportation Article,No,BLACK,F,SILVER SPRING,MD,MD,A - Marked Patrol
@@ -1975,7 +1975,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 19:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2004,LINCOLN,BLACK,Citation,Transportation Article,No,BLACK,M,FORT WASHINGTON,MD,MD,A - Marked Patrol
 15:00:00,1st district Rockville,MINOR INFRACTION,MD,02 - Automobile,2013,LEXUS,GRAY,Citation,Transportation Article,No,WHITE,F,SILVER SPRING,MD,MD,A - Marked Patrol
 23:00:00,1st district Rockville,PLATE VIOLATION,MD,02 - Automobile,2006,FORD,GRAY,Citation,Transportation Article,No,WHITE,F,ROCKVILLE,MD,MD,A - Marked Patrol
-9:00:00,2nd district Bethesda,PLATE VIOLATION,MD,02 - Automobile,2007,ACUR,,Citation,Transportation Article,No,WHITE,F,BETHESDA,MD,MD,A - Marked Patrol
+9:00:00,2nd district Bethesda,PLATE VIOLATION,MD,02 - Automobile,2007,ACUR,__EMPTY__,Citation,Transportation Article,No,WHITE,F,BETHESDA,MD,MD,A - Marked Patrol
 9:00:00,1st district Rockville,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2006,INFI,SILVER,Citation,Transportation Article,No,BLACK,F,SUITLAND,MD,MD,A - Marked Patrol
 5:00:00,1st district Rockville,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2005,INFI,WHITE,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
 3:00:00,6th district Gaithersburg / Montgomery Village,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,1997,TOYT,RED,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
@@ -2044,7 +2044,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 20:00:00,3rd district Silver Spring,PLATE VIOLATION,MD,02 - Automobile,2001,MERCEDES,BLACK,Citation,Transportation Article,No,WHITE,M,KENSINGTON,MD,MD,A - Marked Patrol
 3:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2006,BMW,SILVER,Citation,Transportation Article,No,HISPANIC,M,GAITHERSBURG,MD,MD,A - Marked Patrol
 1:00:00,4th district Wheaton,DRIVING UNINSURED VEHICLE,MD,28 - Other,2010,RIELLA,WHITE,Citation,Transportation Article,No,WHITE,M,BROOKEVILLE,MD,MD,A - Marked Patrol
-15:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,BLACK,M,ASPEN HILL,MD,MD,B - Unmarked Patrol
+15:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,BLACK,M,ASPEN HILL,MD,MD,B - Unmarked Patrol
 1:00:00,1st district Rockville,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2000,DODG,MAROON,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
 1:00:00,1st district Rockville,PLATE VIOLATION,MD,02 - Automobile,2000,DODG,MAROON,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
 3:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,DC,28 - Other,2004,GMC,BLACK,Citation,Transportation Article,No,BLACK,M,TAKOMA PARK,MD,MD,A - Marked Patrol
@@ -2063,7 +2063,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 16:00:00,Headquarters and Special Operations,PLATE VIOLATION,MD,02 - Automobile,2001,HOND,BLACK,Citation,Transportation Article,No,HISPANIC,M,FREDERICK,MD,MD,A - Marked Patrol
 16:00:00,Headquarters and Special Operations,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2001,HOND,BLACK,Citation,Transportation Article,No,HISPANIC,M,FREDERICK,MD,MD,A - Marked Patrol
 16:00:00,Headquarters and Special Operations,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2001,HOND,BLACK,Citation,Transportation Article,No,HISPANIC,M,FREDERICK,MD,MD,A - Marked Patrol
-7:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,ASIAN,M,CHEVY CHASE,MD,MD,A - Marked Patrol
+7:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,ASIAN,M,CHEVY CHASE,MD,MD,A - Marked Patrol
 15:00:00,2nd district Bethesda,MINOR INFRACTION,XX,28 - Other,2007,COLNAGO,BLACK,Citation,Transportation Article,No,WHITE,M,WASHINGTON,DC,DC,A - Marked Patrol
 23:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2008,CHEV,SILVER,Citation,Transportation Article,No,WHITE,F,SILVER SPRING,MD,MD,A - Marked Patrol
 5:00:00,4th district Wheaton,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,2011,CHEVY,SILVER,Citation,Transportation Article,No,BLACK,M,CAPITOL HEIGHTS,MD,MD,A - Marked Patrol
@@ -2090,10 +2090,10 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 18:00:00,5th district Germantown,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1999,JEEP,GRAY,Citation,Transportation Article,No,BLACK,M,BALTIMORE,MD,MD,Q - Marked Laser
 19:00:00,5th district Germantown,SPEEDING,MD,02 - Automobile,2013,BUICK,RED,Citation,Transportation Article,No,WHITE,F,LAYTONSVILLE,MD,MD,Q - Marked Laser
 19:00:00,3rd district Silver Spring,MINOR INFRACTION,MD,02 - Automobile,1997,CHEVY,BEIGE,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
-4:00:00,6th district Gaithersburg / Montgomery Village,MINOR INFRACTION,MD,02 - Automobile,2001,CHEV,GREEN,Citation,Transportation Article,No,WHITE,M,,MD,MD,A - Marked Patrol
+4:00:00,6th district Gaithersburg / Montgomery Village,MINOR INFRACTION,MD,02 - Automobile,2001,CHEV,GREEN,Citation,Transportation Article,No,WHITE,M,__EMPTY__,MD,MD,A - Marked Patrol
 13:00:00,6th district Gaithersburg / Montgomery Village,SPEEDING,MD,02 - Automobile,2007,TOYOTA,WHITE,Citation,Transportation Article,No,HISPANIC,F,MONTGOMERY VILLAGE,MD,MD,A - Marked Patrol
-4:00:00,6th district Gaithersburg / Montgomery Village,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,2001,CHEV,GREEN,Citation,Transportation Article,No,WHITE,M,,MD,MD,A - Marked Patrol
-4:00:00,6th district Gaithersburg / Montgomery Village,RECKLESS DRIVING,MD,02 - Automobile,2001,CHEV,GREEN,Citation,Transportation Article,No,WHITE,M,,MD,MD,A - Marked Patrol
+4:00:00,6th district Gaithersburg / Montgomery Village,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,2001,CHEV,GREEN,Citation,Transportation Article,No,WHITE,M,__EMPTY__,MD,MD,A - Marked Patrol
+4:00:00,6th district Gaithersburg / Montgomery Village,RECKLESS DRIVING,MD,02 - Automobile,2001,CHEV,GREEN,Citation,Transportation Article,No,WHITE,M,__EMPTY__,MD,MD,A - Marked Patrol
 17:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2008,LEXUS,MAROON,Citation,Transportation Article,No,BLACK,F,BETHESDA,MD,MD,A - Marked Patrol
 7:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,IL,02 - Automobile,2001,TOYOTA,GRAY,Citation,Transportation Article,No,HISPANIC,F,ROCKVILLE,MD,XX,A - Marked Patrol
 0:00:00,1st district Rockville,PLATE VIOLATION,MD,02 - Automobile,2006,TOYT,RED,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
@@ -2103,19 +2103,19 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 2:00:00,3rd district Silver Spring,MINOR INFRACTION,MD,02 - Automobile,2002,MAZD,WHITE,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
 1:00:00,2nd district Bethesda,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2008,VOLK,SILVER,Citation,Transportation Article,No,HISPANIC,F,BETHESDA,MD,MD,A - Marked Patrol
 6:00:00,5th district Germantown,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2002,DODG,SILVER,Citation,Transportation Article,No,HISPANIC,M,GERMANTOWN,MD,MD,A - Marked Patrol
-4:00:00,6th district Gaithersburg / Montgomery Village,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2001,CHEV,GREEN,Citation,Transportation Article,No,WHITE,M,,MD,MD,A - Marked Patrol
+4:00:00,6th district Gaithersburg / Montgomery Village,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2001,CHEV,GREEN,Citation,Transportation Article,No,WHITE,M,__EMPTY__,MD,MD,A - Marked Patrol
 15:00:00,4th district Wheaton,SPEEDING,MD,05 - Light Duty Truck,2004,TOYOTA,SILVER,Citation,Transportation Article,No,WHITE,M,OLNEY,MD,MD,A - Marked Patrol
-4:00:00,6th district Gaithersburg / Montgomery Village,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2001,CHEV,GREEN,Citation,Transportation Article,No,WHITE,M,,MD,MD,A - Marked Patrol
-4:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2001,CHEV,GREEN,Citation,Transportation Article,No,WHITE,M,,MD,MD,A - Marked Patrol
+4:00:00,6th district Gaithersburg / Montgomery Village,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2001,CHEV,GREEN,Citation,Transportation Article,No,WHITE,M,__EMPTY__,MD,MD,A - Marked Patrol
+4:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2001,CHEV,GREEN,Citation,Transportation Article,No,WHITE,M,__EMPTY__,MD,MD,A - Marked Patrol
 13:00:00,5th district Germantown,ACCIDENT RELATED,MD,02 - Automobile,2005,TOYOTA,BLACK,Citation,Transportation Article,No,BLACK,M,ROCKVILLE,MD,MD,A - Marked Patrol
-4:00:00,6th district Gaithersburg / Montgomery Village,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2001,CHEV,GREEN,Citation,Transportation Article,No,WHITE,M,,MD,MD,A - Marked Patrol
+4:00:00,6th district Gaithersburg / Montgomery Village,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2001,CHEV,GREEN,Citation,Transportation Article,No,WHITE,M,__EMPTY__,MD,MD,A - Marked Patrol
 12:00:00,1st district Rockville,MINOR INFRACTION,MD,02 - Automobile,2003,CHEVY,WHITE,Citation,Transportation Article,No,HISPANIC,M,HYATTSVILLE,MD,XX,A - Marked Patrol
 11:00:00,1st district Rockville,SPEEDING,MD,02 - Automobile,2007,CADI,BLACK,Citation,Transportation Article,No,BLACK,M,GWYNN OAK,MD,MD,Q - Marked Laser
 13:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,VA,02 - Automobile,2002,PONTIAC,SILVER,Citation,Transportation Article,No,BLACK,M,LANDOVER,MD,MD,A - Marked Patrol
 10:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2004,PONT,BLACK,Citation,Transportation Article,No,BLACK,F,SILVER SPRING,MD,MD,R - Unmarked Laser
 11:00:00,2nd district Bethesda,SPEEDING,VA,02 - Automobile,2007,HONDA,SILVER,Citation,Transportation Article,No,BLACK,F,SPRINGFIELD,VA,VA,Q - Marked Laser
 21:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,DC,02 - Automobile,1999,FORD,GREEN,Citation,Transportation Article,No,BLACK,M,WASHINGTON DC,DC,DC,A - Marked Patrol
-13:00:00,Headquarters and Special Operations,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,BLACK,M,WASHINGTON,DC,DC,O - Foot Patrol
+13:00:00,Headquarters and Special Operations,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,BLACK,M,WASHINGTON,DC,DC,O - Foot Patrol
 18:00:00,1st district Rockville,SPEEDING,MD,02 - Automobile,2011,TOYOTA,GREEN,Citation,Transportation Article,Yes,WHITE,M,BALTIMORE,MD,MD,A - Marked Patrol
 11:00:00,1st district Rockville,SPEEDING,MD,02 - Automobile,2017,TOYT,TAN,Citation,Transportation Article,No,HISPANIC,F,ROCKVILLE,MD,MD,Q - Marked Laser
 12:00:00,1st district Rockville,SPEEDING,MD,02 - Automobile,2014,HYUN,BLACK,Citation,Transportation Article,No,HISPANIC,M,LAUREL,MD,MD,Q - Marked Laser
@@ -2461,7 +2461,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 8:00:00,2nd district Bethesda,PHONE RELATED,MD,28 - Other,2015,TOYOTA,RED,Citation,Transportation Article,No,HISPANIC,F,GERMANTOWN,MD,MD,A - Marked Patrol
 8:00:00,2nd district Bethesda,PHONE RELATED,DC,02 - Automobile,2010,TOYOTA,GRAY,Citation,Transportation Article,No,BLACK,F,WASHINGTON,DC,DC,L - Motorcycle
 13:00:00,1st district Rockville,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2011,CHEV,GRAY,Citation,Transportation Article,No,BLACK,M,POTOMAC,MD,MD,A - Marked Patrol
-15:00:00,1st district Rockville,PLATE VIOLATION,MD,03 - Station Wagon,2005,KIA,,Citation,Transportation Article,No,ASIAN,M,GAITHERSBURG,MD,MD,A - Marked Patrol
+15:00:00,1st district Rockville,PLATE VIOLATION,MD,03 - Station Wagon,2005,KIA,__EMPTY__,Citation,Transportation Article,No,ASIAN,M,GAITHERSBURG,MD,MD,A - Marked Patrol
 8:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,DC,02 - Automobile,2010,TOYOTA,GRAY,Citation,Transportation Article,No,BLACK,F,WASHINGTON,DC,DC,L - Motorcycle
 8:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,DC,02 - Automobile,2010,TOYOTA,GRAY,Citation,Transportation Article,No,BLACK,F,WASHINGTON,DC,DC,L - Motorcycle
 8:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,DC,02 - Automobile,2010,TOYOTA,GRAY,Citation,Transportation Article,No,BLACK,F,WASHINGTON,DC,DC,L - Motorcycle
@@ -2483,17 +2483,17 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 8:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,DC,02 - Automobile,2010,TOYOTA,GRAY,Citation,Transportation Article,No,BLACK,F,WASHINGTON,DC,DC,L - Motorcycle
 8:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,DC,02 - Automobile,2010,TOYOTA,GRAY,Citation,Transportation Article,No,BLACK,F,WASHINGTON,DC,DC,L - Motorcycle
 3:00:00,Headquarters and Special Operations,MINOR INFRACTION,MD,28 - Other,1995,NISSAN,GRAY,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
-13:00:00,6th district Gaithersburg / Montgomery Village,RECKLESS DRIVING,MD,02 - Automobile,2001,CHRY,,Citation,Transportation Article,No,WHITE,M,NORTH POTOMAC,MD,MD,A - Marked Patrol
+13:00:00,6th district Gaithersburg / Montgomery Village,RECKLESS DRIVING,MD,02 - Automobile,2001,CHRY,__EMPTY__,Citation,Transportation Article,No,WHITE,M,NORTH POTOMAC,MD,MD,A - Marked Patrol
 20:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,WV,28 - Other,1997,DODGE,GREEN,Citation,Transportation Article,No,BLACK,M,CAMP SPRINGS,MD,MD,A - Marked Patrol
 18:00:00,1st district Rockville,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2008,LAND ROVER,BLACK,Citation,Transportation Article,No,WHITE,M,POTOMAC,MD,MD,A - Marked Patrol
-2:00:00,1st district Rockville,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1998,INFINITY,,Citation,Transportation Article,No,BLACK,M,MOUNT RAINIER,MD,MD,A - Marked Patrol
+2:00:00,1st district Rockville,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1998,INFINITY,__EMPTY__,Citation,Transportation Article,No,BLACK,M,MOUNT RAINIER,MD,MD,A - Marked Patrol
 0:00:00,4th district Wheaton,ACCIDENT RELATED,MD,02 - Automobile,2005,TOYOTA,MAROON,Citation,Transportation Article,No,HISPANIC,M,HYATTSVILLE,MD,MD,A - Marked Patrol
-10:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,VA,02 - Automobile,2005,FORD,WHITE,Citation,Transportation Article,No,WHITE,F,STERLING,VA,,A - Marked Patrol
+10:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,VA,02 - Automobile,2005,FORD,WHITE,Citation,Transportation Article,No,WHITE,F,STERLING,VA,__EMPTY__,A - Marked Patrol
 9:00:00,1st district Rockville,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2006,INFI,SILVER,Citation,Transportation Article,No,BLACK,F,SUITLAND,MD,MD,A - Marked Patrol
 5:00:00,1st district Rockville,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2005,INFI,WHITE,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
 3:00:00,6th district Gaithersburg / Montgomery Village,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,1997,TOYT,RED,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
-10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,WHITE,M,BETHESDA,MD,MD,L - Motorcycle
-10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,BLACK,M,WASHINTON,DC,DC,L - Motorcycle
+10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,WHITE,M,BETHESDA,MD,MD,L - Motorcycle
+10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,BLACK,M,WASHINTON,DC,DC,L - Motorcycle
 10:00:00,1st district Rockville,MINOR INFRACTION,MD,02 - Automobile,2006,HOND,BLUE LIGHT,Citation,Transportation Article,No,WHITE,F,DARNESTOWN,MD,MD,A - Marked Patrol
 5:00:00,2nd district Bethesda,PHONE RELATED,VA,02 - Automobile,2008,HONDA,RED,Citation,Transportation Article,No,WHITE,F,ARLINGTON,VA,VA,A - Marked Patrol
 5:00:00,2nd district Bethesda,PHONE RELATED,MD,02 - Automobile,2014,JEEP,BLUE DARK,Citation,Transportation Article,No,WHITE,F,ROCKVILLE,MD,MD,A - Marked Patrol
@@ -2569,7 +2569,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 3:00:00,1st district Rockville,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2000,HYUN,GREEN DK,Citation,Transportation Article,Yes,WHITE,M,RIVERDALE,MD,MD,A - Marked Patrol
 3:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2006,BMW,SILVER,Citation,Transportation Article,No,HISPANIC,M,GAITHERSBURG,MD,MD,A - Marked Patrol
 21:00:00,4th district Wheaton,RECKLESS DRIVING,MD,02 - Automobile,2005,JEEP,BLUE,Citation,Transportation Article,No,BLACK,F,TAKOMA PARK,MD,MD,A - Marked Patrol
-15:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,WHITE,M,SILVER SPRING,MD,MD,B - Unmarked Patrol
+15:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,WHITE,M,SILVER SPRING,MD,MD,B - Unmarked Patrol
 18:00:00,5th district Germantown,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,2010,TOYT,GOLD,Citation,Transportation Article,No,ASIAN,F,ROCKVILLE,MD,MD,A - Marked Patrol
 9:00:00,5th district Germantown,SPEEDING,MD,02 - Automobile,1999,HONDA,BLACK,Warning,Transportation Article,No,BLACK,M,CLARKSBURG,MD,MD,Q - Marked Laser
 3:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,DC,28 - Other,2004,GMC,BLACK,Citation,Transportation Article,No,BLACK,M,TAKOMA PARK,MD,MD,A - Marked Patrol
@@ -2627,7 +2627,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 23:00:00,3rd district Silver Spring,NOISE RELATED,MD,02 - Automobile,2001,CHEVROLET,BLACK,Citation,Transportation Article,No,BLACK,M,BURTONSVILLE,MD,MD,O - Foot Patrol
 22:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2007,CHRYSLER,BLUE,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,DC,A - Marked Patrol
 2:00:00,5th district Germantown,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2004,FORD,RED,Citation,Transportation Article,No,WHITE,M,BOYDS,MD,MD,A - Marked Patrol
-13:00:00,Headquarters and Special Operations,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,O - Foot Patrol
+13:00:00,Headquarters and Special Operations,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,O - Foot Patrol
 15:00:00,4th district Wheaton,PLATE VIOLATION,MD,05 - Light Duty Truck,2004,TOYOTA,SILVER,Citation,Transportation Article,No,WHITE,M,OLNEY,MD,MD,A - Marked Patrol
 18:00:00,1st district Rockville,DISOBEY TRAFFIC CONTROL,DC,02 - Automobile,2008,BMW,BLUE,Warning,Transportation Article,No,BLACK,M,CAPITOL HEIGHTS,MD,MD,A - Marked Patrol
 18:00:00,1st district Rockville,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,2006,TOYT,WHITE,Warning,Transportation Article,No,HISPANIC,M,ROCKVILLE,MD,MD,A - Marked Patrol
@@ -3078,7 +3078,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 18:00:00,3rd district Silver Spring,LEARNING DRIVER WITHOUT SUPERVISION,MD,02 - Automobile,1995,FORD,MAROON,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
 3:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2006,BMW,SILVER,Citation,Transportation Article,No,HISPANIC,M,GAITHERSBURG,MD,MD,A - Marked Patrol
 21:00:00,4th district Wheaton,RECKLESS DRIVING,MD,02 - Automobile,2005,JEEP,BLUE,Citation,Transportation Article,No,BLACK,F,TAKOMA PARK,MD,MD,A - Marked Patrol
-16:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,WHITE,M,JOPPA,MD,MD,B - Unmarked Patrol
+16:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,WHITE,M,JOPPA,MD,MD,B - Unmarked Patrol
 17:00:00,5th district Germantown,OTHER,MD,06 - Heavy Duty Truck,2003,FORD,WHITE,Warning,Maryland Rules,No,HISPANIC,M,GAITHERSBURG,MD,MD,A - Marked Patrol
 17:00:00,5th district Germantown,VEHICLE OR EQUIPMENT VIOLATION,MD,06 - Heavy Duty Truck,2003,FORD,WHITE,Warning,Maryland Rules,No,HISPANIC,M,GAITHERSBURG,MD,MD,A - Marked Patrol
 21:00:00,3rd district Silver Spring,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,2015,FORD,RED,Citation,Transportation Article,No,BLACK,F,SILVER SPRING,MD,MD,A - Marked Patrol
@@ -3148,7 +3148,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 11:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2001,MITSUBISHI,BLUE DARK,Citation,Transportation Article,No,HISPANIC,F,SILVER SPRING,MD,MD,A - Marked Patrol
 23:00:00,6th district Gaithersburg / Montgomery Village,DRIVING UNINSURED VEHICLE,MD,02 - Automobile,2003,MERC,TAN,Citation,Transportation Article,No,BLACK,F,GAITHERSBURG,MD,MD,A - Marked Patrol
 5:00:00,3rd district Silver Spring,RECKLESS DRIVING,MD,02 - Automobile,2001,HOND,SILVER,Citation,Transportation Article,No,HISPANIC,F,BOWIE,MD,MD,A - Marked Patrol
-11:00:00,Headquarters and Special Operations,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,OTHER,F,WHEATON,MD,MD,A - Marked Patrol
+11:00:00,Headquarters and Special Operations,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,OTHER,F,WHEATON,MD,MD,A - Marked Patrol
 18:00:00,1st district Rockville,RECKLESS DRIVING,MD,02 - Automobile,2011,TOYOTA,GREEN,Citation,Transportation Article,Yes,WHITE,M,BALTIMORE,MD,MD,A - Marked Patrol
 21:00:00,3rd district Silver Spring,RECKLESS DRIVING,VA,02 - Automobile,2013,CADILLAC,SILVER,Citation,Transportation Article,No,BLACK,M,WASHINGTON,DC,DC,A - Marked Patrol
 15:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2007,BMW,WHITE,Citation,Transportation Article,No,BLACK,F,SILVER SPRING,MD,MD,A - Marked Patrol
@@ -3318,10 +3318,10 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 16:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1996,LINCOLN,GOLD,Citation,Transportation Article,No,BLACK,M,WASHINGTON,DC,DC,A - Marked Patrol
 16:00:00,4th district Wheaton,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,2014,ACUR,GRAY,Warning,Transportation Article,No,WHITE,F,SILVER SPRING,MD,MD,A - Marked Patrol
 16:00:00,4th district Wheaton,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,2015,TOYOTA,ORANGE,Warning,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
-9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,WHITE,F,ARLINGTON,VA,VA,L - Motorcycle
-10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,WHITE,F,BERKELEY,CA,CA,L - Motorcycle
-10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,WHITE,M,GAITHERSBURG,MD,MD,L - Motorcycle
-10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,ASIAN,M,NEW YORK,NY,NY,L - Motorcycle
+9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,WHITE,F,ARLINGTON,VA,VA,L - Motorcycle
+10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,WHITE,F,BERKELEY,CA,CA,L - Motorcycle
+10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,WHITE,M,GAITHERSBURG,MD,MD,L - Motorcycle
+10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,ASIAN,M,NEW YORK,NY,NY,L - Motorcycle
 17:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2011,HONDA,BLACK,Citation,Transportation Article,No,BLACK,F,CHELTENHAM,MD,MD,A - Marked Patrol
 23:00:00,4th district Wheaton,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2003,HONDA,SILVER,Citation,Transportation Article,No,HISPANIC,M,GAITHERSBURG,MD,MD,A - Marked Patrol
 14:00:00,4th district Wheaton,MINOR INFRACTION,MD,02 - Automobile,1996,NISSAN,BLACK,Citation,Transportation Article,No,HISPANIC,F,ROCKVILLE,MD,MD,A - Marked Patrol
@@ -3331,13 +3331,13 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 16:00:00,4th district Wheaton,RECKLESS DRIVING,MD,02 - Automobile,2005,TOYOTA,BLACK,Citation,Transportation Article,No,WHITE,F,SILVER SPRING,MD,MD,A - Marked Patrol
 2:00:00,5th district Germantown,SPEEDING,MD,02 - Automobile,2009,FORD,BLACK,Citation,Transportation Article,No,WHITE,M,WALDORF,MD,MD,A - Marked Patrol
 18:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2003,HONDA,BLUE,Citation,Transportation Article,No,WHITE,F,BETHESDA,MD,MD,A - Marked Patrol
-10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,WHITE,M,ARLINGTON,VA,VA,L - Motorcycle
-10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,WHITE,F,CLARCKSBURG,MD,MD,L - Motorcycle
-10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,ASIAN,F,GAITHERSBURG,MD,MD,L - Motorcycle
+10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,WHITE,M,ARLINGTON,VA,VA,L - Motorcycle
+10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,WHITE,F,CLARCKSBURG,MD,MD,L - Motorcycle
+10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,ASIAN,F,GAITHERSBURG,MD,MD,L - Motorcycle
 21:00:00,4th district Wheaton,RECKLESS DRIVING,MD,02 - Automobile,2005,FORD,WHITE,Citation,Transportation Article,No,WHITE,M,SILVER SPRING,MD,MD,A - Marked Patrol
 0:00:00,5th district Germantown,LEARNING DRIVER WITHOUT SUPERVISION,MD,02 - Automobile,2013,TOYT,SILVER,Citation,Transportation Article,No,HISPANIC,M,GERMANTOWN,MD,MD,A - Marked Patrol
-10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,WHITE,M,BETHESDA,MD,MD,L - Motorcycle
-10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,ASIAN,M,ROCKVILLE,MD,MD,L - Motorcycle
+10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,WHITE,M,BETHESDA,MD,MD,L - Motorcycle
+10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,ASIAN,M,ROCKVILLE,MD,MD,L - Motorcycle
 15:00:00,1st district Rockville,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,2013,NISSAN,BROWN,Citation,Transportation Article,No,WHITE,F,GERMANTOWN,MD,MD,A - Marked Patrol
 10:00:00,6th district Gaithersburg / Montgomery Village,SPEEDING,MD,02 - Automobile,2000,SUBARU,BLUE LIGHT,Citation,Transportation Article,No,WHITE,M,GAITHERSBURG,MD,MD,Q - Marked Laser
 10:00:00,1st district Rockville,SPEEDING,MD,05 - Light Duty Truck,1997,JEEP,GREEN,Warning,Transportation Article,No,HISPANIC,M,GERMANTOWN,MD,MD,G - Marked Moving Radar (Stationary)
@@ -3558,14 +3558,14 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 6:00:00,1st district Rockville,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2001,CHEV,WHITE,Citation,Transportation Article,No,HISPANIC,M,MONTGOMERY VILLAGE,MD,MD,A - Marked Patrol
 16:00:00,2nd district Bethesda,SPEEDING,WV,02 - Automobile,2006,NISS,BEIGE,Citation,Transportation Article,Yes,BLACK,M,CLARKSBURG,MD,WV,A - Marked Patrol
 16:00:00,2nd district Bethesda,MINOR INFRACTION,MD,05 - Light Duty Truck,2007,HOND,BLUE,Citation,Transportation Article,No,WHITE,F,POTOMAC,MD,MD,A - Marked Patrol
-12:00:00,Headquarters and Special Operations,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
+12:00:00,Headquarters and Special Operations,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
 19:00:00,6th district Gaithersburg / Montgomery Village,RECKLESS DRIVING,MD,02 - Automobile,2011,TOYO,SILVER,Citation,Transportation Article,No,ASIAN,M,NORTH POTOMAC,MD,MD,A - Marked Patrol
 19:00:00,Headquarters and Special Operations,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,2010,MAZDA,BLACK,Citation,Transportation Article,No,WHITE,M,POTOMAC,MD,MD,A - Marked Patrol
 21:00:00,2nd district Bethesda,SPEEDING,MD,02 - Automobile,2008,LNDR,BLACK,Citation,Transportation Article,No,WHITE,M,ROCKVILLE,MD,MD,A - Marked Patrol
 8:00:00,6th district Gaithersburg / Montgomery Village,SPEEDING,MD,02 - Automobile,1998,BMW,SILVER,Warning,Transportation Article,No,WHITE,M,GAITHERSBURG,MD,MD,R - Unmarked Laser
 21:00:00,4th district Wheaton,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2007,FORD,WHITE,Warning,Transportation Article,No,WHITE,F,SILVER SPRING,MD,MD,A - Marked Patrol
-8:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,WHITE,M,WASHINGTON,DC,DC,L - Motorcycle
-8:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,BLACK,F,WASHINGTON,DC,DC,L - Motorcycle
+8:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,WHITE,M,WASHINGTON,DC,DC,L - Motorcycle
+8:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,BLACK,F,WASHINGTON,DC,DC,L - Motorcycle
 11:00:00,1st district Rockville,SPEEDING,MD,05 - Light Duty Truck,2009,NISS,WHITE,Warning,Transportation Article,No,WHITE,F,DERWOOD,MD,MD,G - Marked Moving Radar (Stationary)
 14:00:00,6th district Gaithersburg / Montgomery Village,MINOR INFRACTION,MD,02 - Automobile,2004,SUBARU,RED,Citation,Transportation Article,No,WHITE,F,GAITHERSBURG,MD,MD,A - Marked Patrol
 16:00:00,2nd district Bethesda,MINOR INFRACTION,MD,02 - Automobile,2003,FORD,GOLD,Citation,Transportation Article,Yes,WHITE,M,MONROVIA,MD,OH,A - Marked Patrol
@@ -3574,7 +3574,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 22:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2001,LINCOLN,GREEN,Citation,Transportation Article,No,BLACK,M,UPPER MARLBORO,MD,MD,A - Marked Patrol
 17:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1997,INFI,BLACK,Citation,Transportation Article,No,HISPANIC,M,HYATTSVILLE,MD,MD,A - Marked Patrol
 2:00:00,6th district Gaithersburg / Montgomery Village,PLATE VIOLATION,VA,02 - Automobile,2004,NISSAN,SILVER,Citation,Transportation Article,No,BLACK,M,GERMANTOWN,MD,MD,A - Marked Patrol
-8:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,OTHER,M,GAITHERSBURG,MD,MD,L - Motorcycle
+8:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,OTHER,M,GAITHERSBURG,MD,MD,L - Motorcycle
 0:00:00,1st district Rockville,SPEEDING,MD,02 - Automobile,2012,DODGE,WHITE,Citation,Transportation Article,No,WHITE,M,BOYDS,MD,MD,A - Marked Patrol
 22:00:00,5th district Germantown,MINOR INFRACTION,MD,02 - Automobile,2005,NISSAN,GOLD,Citation,Transportation Article,No,BLACK,F,GERMANTOWN,MD,MD,A - Marked Patrol
 19:00:00,1st district Rockville,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1999,PLYMOUTH,GREEN,Citation,Transportation Article,Yes,HISPANIC,F,SILVER SPRING,MD,MD,A - Marked Patrol
@@ -3582,26 +3582,26 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 3:00:00,6th district Gaithersburg / Montgomery Village,MINOR INFRACTION,MD,01 - Motorcycle,2003,TOYT,SILVER,Citation,Transportation Article,No,BLACK,M,GERMANTOWN,MD,MD,A - Marked Patrol
 6:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,PA,01 - Motorcycle,2002,TOYOTA,GRAY,Citation,Transportation Article,No,HISPANIC,M,OXFORD,PA,PA,A - Marked Patrol
 6:00:00,Headquarters and Special Operations,SPEEDING,MD,02 - Automobile,2009,HOND,WHITE,Citation,Transportation Article,No,WHITE,F,GERMANTOWN,MD,MD,A - Marked Patrol
-14:00:00,3rd district Silver Spring,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
+14:00:00,3rd district Silver Spring,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
 0:00:00,5th district Germantown,PLATE VIOLATION,MD,02 - Automobile,2002,CHRY,WHITE,Citation,Transportation Article,No,BLACK,M,GERMANTOWN,MD,MD,A - Marked Patrol
 21:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2003,LEXS,MAROON,Citation,Transportation Article,No,BLACK,M,BURTONSVILLE,MD,MD,A - Marked Patrol
-8:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,BLACK,F,LAUREL,MD,FL,L - Motorcycle
-8:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,L - Motorcycle
+8:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,BLACK,F,LAUREL,MD,FL,L - Motorcycle
+8:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,L - Motorcycle
 15:00:00,3rd district Silver Spring,DRIVING UNINSURED VEHICLE,DC,02 - Automobile,2000,NISSAN,GOLD,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
-8:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,WHITE,M,WASHINGTON,DC,DC,L - Motorcycle
-9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,BLACK,F,COLLEGE PARK,MD,MD,L - Motorcycle
-9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,WHITE,F,WASHINGTON,DC,DC,L - Motorcycle
-9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,BLACK,M,WASHINGTON,DC,DC,L - Motorcycle
+8:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,WHITE,M,WASHINGTON,DC,DC,L - Motorcycle
+9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,BLACK,F,COLLEGE PARK,MD,MD,L - Motorcycle
+9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,WHITE,F,WASHINGTON,DC,DC,L - Motorcycle
+9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,BLACK,M,WASHINGTON,DC,DC,L - Motorcycle
 16:00:00,1st district Rockville,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,2002,SUBARU,SILVER,Citation,Transportation Article,No,WHITE,F,SILVER SPRING,MD,MD,A - Marked Patrol
 16:00:00,4th district Wheaton,RECKLESS DRIVING,MD,02 - Automobile,2006,FORD,WHITE,Citation,Transportation Article,No,WHITE,M,SILVER SPRING,MD,MD,A - Marked Patrol
 19:00:00,4th district Wheaton,MINOR INFRACTION,MD,02 - Automobile,1991,ACUR,SILVER,Citation,Transportation Article,No,ASIAN,M,SILVER SPRING,MD,MD,A - Marked Patrol
 3:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2006,BMW,SILVER,Citation,Transportation Article,No,HISPANIC,M,GAITHERSBURG,MD,MD,A - Marked Patrol
 13:00:00,4th district Wheaton,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,1999,HONDA,GRAY,Citation,Transportation Article,No,WHITE,F,GREAT MILLS,MD,MD,A - Marked Patrol
-15:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,ASIAN,M,ROCKVILLE,MD,MD,B - Unmarked Patrol
+15:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,ASIAN,M,ROCKVILLE,MD,MD,B - Unmarked Patrol
 9:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,VA,08 - Recreational Vehicle,2011,CHEVROLET,BLUE,Citation,Transportation Article,No,BLACK,M,CLARKSBURG,MD,MD,Q - Marked Laser
 22:00:00,5th district Germantown,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,1993,NISSAN,BLUE DARK,Citation,Transportation Article,No,BLACK,M,GERMANTOWN,MD,MD,A - Marked Patrol
-9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,WHITE,F,WASHINGTON,DC,DC,L - Motorcycle
-9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,ASIAN,M,WASHINGTON,DC,DC,L - Motorcycle
+9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,WHITE,F,WASHINGTON,DC,DC,L - Motorcycle
+9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,ASIAN,M,WASHINGTON,DC,DC,L - Motorcycle
 21:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2015,FORD,RED,Citation,Transportation Article,No,BLACK,F,SILVER SPRING,MD,MD,A - Marked Patrol
 17:00:00,2nd district Bethesda,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,2000,HONDA,BLUE LIGHT,Citation,Transportation Article,No,WHITE,F,SILVER SPRING,MD,MD,A - Marked Patrol
 5:00:00,3rd district Silver Spring,MINOR INFRACTION,MD,08 - Recreational Vehicle,2003,FORD,BLUE,Citation,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,A - Marked Patrol
@@ -3613,26 +3613,26 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 10:00:00,2nd district Bethesda,PLATE VIOLATION,MD,02 - Automobile,2000,TOYOT,GRAY,Citation,Transportation Article,No,WHITE,F,ROCKVILLE,MD,MD,A - Marked Patrol
 12:00:00,2nd district Bethesda,SPEEDING,MD,03 - Station Wagon,2003,DODGE,BLUE,Citation,Transportation Article,No,WHITE,M,NEW CARROLLTON,MD,MD,Q - Marked Laser
 0:00:00,5th district Germantown,SPEEDING,MD,02 - Automobile,2001,BMW,SILVER,Citation,Transportation Article,No,BLACK,M,GERMANTOWN,MD,MD,A - Marked Patrol
-9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,WHITE,M,ROCKVILLE,MD,MD,L - Motorcycle
-9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,WHITE,F,JERSEY CITY,NJ,NJ,L - Motorcycle
-9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,WHITE,F,WASHINGTON,DC,DC,L - Motorcycle
-9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,HISPANIC,F,CHEVY CHASE,MD,XX,L - Motorcycle
-9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,OTHER,M,FALLS CHURCH,VA,VA,L - Motorcycle
+9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,WHITE,M,ROCKVILLE,MD,MD,L - Motorcycle
+9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,WHITE,F,JERSEY CITY,NJ,NJ,L - Motorcycle
+9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,WHITE,F,WASHINGTON,DC,DC,L - Motorcycle
+9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,HISPANIC,F,CHEVY CHASE,MD,XX,L - Motorcycle
+9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,OTHER,M,FALLS CHURCH,VA,VA,L - Motorcycle
 21:00:00,5th district Germantown,MINOR INFRACTION,MD,02 - Automobile,2010,TOYT,GRAY,Citation,Transportation Article,No,HISPANIC,M,GERMANTOWN,MD,MD,A - Marked Patrol
 23:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2003,LEXUS,SILVER,Citation,Transportation Article,No,WHITE,M,BETHESDA,MD,MD,A - Marked Patrol
 0:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2004,PONT,RED,Citation,Transportation Article,No,ASIAN,M,GERMANTOWN,MD,MD,A - Marked Patrol
 5:00:00,3rd district Silver Spring,NOISE RELATED,DC,02 - Automobile,2007,GMC,GRAY,Citation,Transportation Article,No,BLACK,F,WASHINGTON,DC,DC,A - Marked Patrol
 0:00:00,6th district Gaithersburg / Montgomery Village,DRIVING UNINSURED VEHICLE,MD,03 - Station Wagon,1994,FORD,GREEN LGT,Citation,Transportation Article,No,BLACK,M,GERMANTOWN,MD,MD,A - Marked Patrol
 22:00:00,6th district Gaithersburg / Montgomery Village,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,2005,GMC,SILVER,Citation,Transportation Article,No,WHITE,M,GERMANTOWN,MD,MD,A - Marked Patrol
-9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,WHITE,F,WASHINGTON,DC,IL,L - Motorcycle
-9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,WHITE,M,BETHESDA,MD,MD,L - Motorcycle
-10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,WHITE,M,SANDY SPRING,MD,MD,L - Motorcycle
-10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,WHITE,M,NAPERVILLE,IL,IL,L - Motorcycle
+9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,WHITE,F,WASHINGTON,DC,IL,L - Motorcycle
+9:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,WHITE,M,BETHESDA,MD,MD,L - Motorcycle
+10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,WHITE,M,SANDY SPRING,MD,MD,L - Motorcycle
+10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,WHITE,M,NAPERVILLE,IL,IL,L - Motorcycle
 22:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,MD,19 - Moped,2009,NIITRO,RED,Citation,Transportation Article,No,WHITE,M,BETHESDA,MD,MD,A - Marked Patrol
 12:00:00,6th district Gaithersburg / Montgomery Village,PLATE VIOLATION,MD,02 - Automobile,2000,SUBA,WHITE,Citation,Transportation Article,No,WHITE,M,CHEVY CHASE,MD,MD,A - Marked Patrol
-10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,BLACK,F,CHEVY  CHASE,MD,MD,L - Motorcycle
+10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,BLACK,F,CHEVY  CHASE,MD,MD,L - Motorcycle
 23:00:00,4th district Wheaton,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,1999,ISU,BLUE DARK,Citation,Transportation Article,No,HISPANIC,F,SILVER SPRING,MD,MD,A - Marked Patrol
-10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,HISPANIC,F,SILVER SPRING,MD,MD,L - Motorcycle
+10:00:00,2nd district Bethesda,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,HISPANIC,F,SILVER SPRING,MD,MD,L - Motorcycle
 14:00:00,3rd district Silver Spring,DRIVING UNINSURED VEHICLE,MD,02 - Automobile,2004,KIA,WHITE,Warning,Transportation Article,No,BLACK,F,SILVER SPRING,MD,MD,A - Marked Patrol
 22:00:00,2nd district Bethesda,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2012,SUBA,SILVER,Warning,Transportation Article,No,OTHER,F,SILVER SPRING,MD,MD,A - Marked Patrol
 17:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2007,TOYT,BLACK,Citation,Transportation Article,No,BLACK,F,LAUREL,MD,MD,A - Marked Patrol
@@ -3723,7 +3723,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 8:00:00,2nd district Bethesda,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,2004,HOND,SILVER,Citation,Transportation Article,No,ASIAN,M,NORTH BETHESDA,MD,MD,A - Marked Patrol
 1:00:00,4th district Wheaton,RECKLESS DRIVING,MD,02 - Automobile,2003,NISS,SILVER,Citation,Transportation Article,No,HISPANIC,F,SILVER SPRING,MD,MD,A - Marked Patrol
 7:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2007,NISSAN,BLUE,Citation,Transportation Article,No,HISPANIC,M,COLLEGE PARK,MD,MD,Q - Marked Laser
-12:00:00,6th district Gaithersburg / Montgomery Village,OTHER,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,WHITE,M,GAITHERSBURG,MD,MD,A - Marked Patrol
+12:00:00,6th district Gaithersburg / Montgomery Village,OTHER,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,WHITE,M,GAITHERSBURG,MD,MD,A - Marked Patrol
 1:00:00,5th district Germantown,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2007,FORD,RED,Citation,Transportation Article,No,WHITE,M,GERMANTOWN,MD,MD,Q - Marked Laser
 17:00:00,3rd district Silver Spring,SPEEDING,MD,02 - Automobile,2006,ACUR,GREEN,Citation,Transportation Article,Yes,WHITE,F,BETHESDA,MD,MD,A - Marked Patrol
 14:00:00,1st district Rockville,PLATE VIOLATION,VA,02 - Automobile,2012,CHEVY,BLUE DARK,Citation,Transportation Article,No,WHITE,F,FALLS CHURCH,VA,VA,A - Marked Patrol
@@ -3897,7 +3897,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 1:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2013,RANGE ROVER,BLACK,Citation,Transportation Article,No,BLACK,M,BOWIE,MD,MD,A - Marked Patrol
 1:00:00,3rd district Silver Spring,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2013,RANGE ROVER,BLACK,Citation,Transportation Article,No,BLACK,M,BOWIE,MD,MD,A - Marked Patrol
 23:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2010,TOYOTA,GRAY,Citation,Transportation Article,No,OTHER,M,SILVER SPRING,MD,MD,B - Unmarked Patrol
-23:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,WHITE,M,ROCKVILLE,MD,MD,A - Marked Patrol
+23:00:00,1st district Rockville,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,WHITE,M,ROCKVILLE,MD,MD,A - Marked Patrol
 10:00:00,3rd district Silver Spring,PHONE RELATED,MD,02 - Automobile,2007,KIA,GRAY,Citation,Transportation Article,No,WHITE,F,COCKEYSVILLE,MD,MD,A - Marked Patrol
 2:00:00,5th district Germantown,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2013,JEEP,GREEN DK,Citation,Transportation Article,No,BLACK,M,GAITHERSBURG,MD,MD,A - Marked Patrol
 2:00:00,5th district Germantown,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2013,JEEP,GREEN DK,Citation,Transportation Article,No,BLACK,M,GAITHERSBURG,MD,MD,A - Marked Patrol
@@ -4050,7 +4050,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 10:00:00,Headquarters and Special Operations,SPEEDING,MD,02 - Automobile,2005,DODG,BLUE,Warning,Transportation Article,No,WHITE,M,SILVER SPRING,MD,MD,Q - Marked Laser
 10:00:00,Headquarters and Special Operations,SPEEDING,MD,02 - Automobile,1999,SATURN,BLACK,Warning,Transportation Article,No,WHITE,M,SILVER SPRING,MD,MD,Q - Marked Laser
 10:00:00,Headquarters and Special Operations,SPEEDING,MD,02 - Automobile,1999,SATURN,BLACK,Warning,Transportation Article,No,WHITE,M,SILVER SPRING,MD,MD,Q - Marked Laser
-10:00:00,Headquarters and Special Operations,PEDESTRIAN INFRACTION,XX,29 - Unknown,,NONE,N/A,Warning,Transportation Article,No,BLACK,M,GREENBELT,MD,MD,A - Marked Patrol
+10:00:00,Headquarters and Special Operations,PEDESTRIAN INFRACTION,XX,29 - Unknown,__EMPTY__,NONE,N/A,Warning,Transportation Article,No,BLACK,M,GREENBELT,MD,MD,A - Marked Patrol
 10:00:00,Headquarters and Special Operations,SPEEDING,MD,02 - Automobile,2007,NISSAN,BLUE,Warning,Transportation Article,No,HISPANIC,M,ROCKVILLE,MD,MD,Q - Marked Laser
 11:00:00,Headquarters and Special Operations,SPEEDING,MD,02 - Automobile,2014,ACURA,BLACK,Warning,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,Q - Marked Laser
 11:00:00,Headquarters and Special Operations,SPEEDING,MD,02 - Automobile,2014,ACURA,BLACK,Warning,Transportation Article,No,BLACK,M,SILVER SPRING,MD,MD,Q - Marked Laser
@@ -4332,29 +4332,29 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 21:00:00,4th district Wheaton,DISOBEY TRAFFIC CONTROL,MD,02 - Automobile,2012,HONDA,GRAY,Warning,Transportation Article,No,HISPANIC,F,ROCKVILLE,MD,MD,A - Marked Patrol
 10:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1999,HOND,WHITE,Warning,Transportation Article,No,BLACK,F,LARGO,MD,MD,A - Marked Patrol
 10:00:00,6th district Gaithersburg / Montgomery Village,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,1999,HOND,WHITE,Warning,Transportation Article,No,BLACK,F,LARGO,MD,MD,A - Marked Patrol
-12:00:00,1st district Rockville,VEHICLE OR EQUIPMENT VIOLATION,MD,05 - Light Duty Truck,2016,CHEVY,WHITE,ESERO,,No,WHITE,M,DAMASCUS,MD,MD,A - Marked Patrol
-10:00:00,6th district Gaithersburg / Montgomery Village,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2004,TOYOTA,BLUE DARK,ESERO,,No,HISPANIC,M,GAITHERSBURG,MD,MD,E - Marked Stationary Radar
-22:00:00,2nd district Bethesda,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2008,MAZD,GRAY,ESERO,,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
-22:00:00,1st district Rockville,MINOR INFRACTION,MD,02 - Automobile,2006,HONDA,MAROON,ESERO,,No,HISPANIC,M,POOLESVILLE,MD,MD,A - Marked Patrol
-22:00:00,1st district Rockville,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2006,HONDA,MAROON,ESERO,,No,HISPANIC,M,POOLESVILLE,MD,MD,A - Marked Patrol
-20:00:00,4th district Wheaton,MINOR INFRACTION,MD,02 - Automobile,2004,FORD,WHITE,ESERO,,No,BLACK,M,GERMANTOWN,MD,MD,A - Marked Patrol
-21:00:00,4th district Wheaton,MINOR INFRACTION,MD,02 - Automobile,1994,TOYOTA,GREEN,ESERO,,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
-22:00:00,4th district Wheaton,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2006,TOYT,GRAY,ESERO,,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
-22:00:00,4th district Wheaton,MINOR INFRACTION,MD,02 - Automobile,1994,HOND,GRAY,ESERO,,No,HISPANIC,F,SILVER SPRING,MD,XX,A - Marked Patrol
-22:00:00,5th district Germantown,MINOR INFRACTION,MD,02 - Automobile,2004,HOND,SILVER,ESERO,,No,WHITE,M,GAITHERSBURG,MD,MD,B - Unmarked Patrol
-22:00:00,5th district Germantown,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2001,ACUR,BLACK,ESERO,,No,WHITE,M,GAITHERSBURG,MD,MD,B - Unmarked Patrol
-22:00:00,5th district Germantown,MINOR INFRACTION,MD,02 - Automobile,2001,ACUR,BLACK,ESERO,,No,WHITE,M,GAITHERSBURG,MD,MD,B - Unmarked Patrol
-22:00:00,5th district Germantown,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2001,ACUR,BLACK,ESERO,,No,WHITE,M,GAITHERSBURG,MD,MD,B - Unmarked Patrol
-22:00:00,3rd district Silver Spring,VEHICLE OR EQUIPMENT VIOLATION,MD,28 - Other,1999,FORD,N/A,ESERO,,No,BLACK,F,SILVER SPRING,MD,MD,A - Marked Patrol
-20:00:00,5th district Germantown,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2011,TOYOTA,WHITE,ESERO,,No,BLACK,M,MONTGOMERY VILLAGE,MD,MD,A - Marked Patrol
-22:00:00,5th district Germantown,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2014,HYUNDAI,SILVER,ESERO,,No,WHITE,M,GAITHERSBURG,MD,MD,A - Marked Patrol
-21:00:00,Headquarters and Special Operations,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2006,CHEV,WHITE,ESERO,,No,BLACK,M,GERMANTOWN,MD,MD,B - Unmarked Patrol
-20:00:00,4th district Wheaton,MINOR INFRACTION,MD,02 - Automobile,2005,TOYOTA,GRAY,ESERO,,No,BLACK,F,COLESVILLE,MD,MD,A - Marked Patrol
-20:00:00,4th district Wheaton,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2004,CHEVROLET,WHITE,ESERO,,No,HISPANIC,F,WHEATON,MD,MD,A - Marked Patrol
-21:00:00,4th district Wheaton,MINOR INFRACTION,MD,02 - Automobile,2003,CHEV,WHITE,ESERO,,No,HISPANIC,M,GERMANTOWN,MD,MD,A - Marked Patrol
-22:00:00,5th district Germantown,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2013,TOYOTA,GRAY,ESERO,,No,HISPANIC,M,GAITHERSBURG,MD,MD,A - Marked Patrol
-22:00:00,5th district Germantown,VEHICLE OR EQUIPMENT VIOLATION,MD,03 - Station Wagon,2003,TOYT,WHITE,ESERO,,No,WHITE,F,GAITHERSBURG,MD,MD,A - Marked Patrol
-21:00:00,2nd district Bethesda,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2003,HONDA,RED,ESERO,,No,ASIAN,M,BURTONSVILLE,MD,MD,A - Marked Patrol
+12:00:00,1st district Rockville,VEHICLE OR EQUIPMENT VIOLATION,MD,05 - Light Duty Truck,2016,CHEVY,WHITE,ESERO,__EMPTY__,No,WHITE,M,DAMASCUS,MD,MD,A - Marked Patrol
+10:00:00,6th district Gaithersburg / Montgomery Village,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2004,TOYOTA,BLUE DARK,ESERO,__EMPTY__,No,HISPANIC,M,GAITHERSBURG,MD,MD,E - Marked Stationary Radar
+22:00:00,2nd district Bethesda,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2008,MAZD,GRAY,ESERO,__EMPTY__,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
+22:00:00,1st district Rockville,MINOR INFRACTION,MD,02 - Automobile,2006,HONDA,MAROON,ESERO,__EMPTY__,No,HISPANIC,M,POOLESVILLE,MD,MD,A - Marked Patrol
+22:00:00,1st district Rockville,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2006,HONDA,MAROON,ESERO,__EMPTY__,No,HISPANIC,M,POOLESVILLE,MD,MD,A - Marked Patrol
+20:00:00,4th district Wheaton,MINOR INFRACTION,MD,02 - Automobile,2004,FORD,WHITE,ESERO,__EMPTY__,No,BLACK,M,GERMANTOWN,MD,MD,A - Marked Patrol
+21:00:00,4th district Wheaton,MINOR INFRACTION,MD,02 - Automobile,1994,TOYOTA,GREEN,ESERO,__EMPTY__,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
+22:00:00,4th district Wheaton,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2006,TOYT,GRAY,ESERO,__EMPTY__,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
+22:00:00,4th district Wheaton,MINOR INFRACTION,MD,02 - Automobile,1994,HOND,GRAY,ESERO,__EMPTY__,No,HISPANIC,F,SILVER SPRING,MD,XX,A - Marked Patrol
+22:00:00,5th district Germantown,MINOR INFRACTION,MD,02 - Automobile,2004,HOND,SILVER,ESERO,__EMPTY__,No,WHITE,M,GAITHERSBURG,MD,MD,B - Unmarked Patrol
+22:00:00,5th district Germantown,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2001,ACUR,BLACK,ESERO,__EMPTY__,No,WHITE,M,GAITHERSBURG,MD,MD,B - Unmarked Patrol
+22:00:00,5th district Germantown,MINOR INFRACTION,MD,02 - Automobile,2001,ACUR,BLACK,ESERO,__EMPTY__,No,WHITE,M,GAITHERSBURG,MD,MD,B - Unmarked Patrol
+22:00:00,5th district Germantown,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2001,ACUR,BLACK,ESERO,__EMPTY__,No,WHITE,M,GAITHERSBURG,MD,MD,B - Unmarked Patrol
+22:00:00,3rd district Silver Spring,VEHICLE OR EQUIPMENT VIOLATION,MD,28 - Other,1999,FORD,N/A,ESERO,__EMPTY__,No,BLACK,F,SILVER SPRING,MD,MD,A - Marked Patrol
+20:00:00,5th district Germantown,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2011,TOYOTA,WHITE,ESERO,__EMPTY__,No,BLACK,M,MONTGOMERY VILLAGE,MD,MD,A - Marked Patrol
+22:00:00,5th district Germantown,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2014,HYUNDAI,SILVER,ESERO,__EMPTY__,No,WHITE,M,GAITHERSBURG,MD,MD,A - Marked Patrol
+21:00:00,Headquarters and Special Operations,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2006,CHEV,WHITE,ESERO,__EMPTY__,No,BLACK,M,GERMANTOWN,MD,MD,B - Unmarked Patrol
+20:00:00,4th district Wheaton,MINOR INFRACTION,MD,02 - Automobile,2005,TOYOTA,GRAY,ESERO,__EMPTY__,No,BLACK,F,COLESVILLE,MD,MD,A - Marked Patrol
+20:00:00,4th district Wheaton,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2004,CHEVROLET,WHITE,ESERO,__EMPTY__,No,HISPANIC,F,WHEATON,MD,MD,A - Marked Patrol
+21:00:00,4th district Wheaton,MINOR INFRACTION,MD,02 - Automobile,2003,CHEV,WHITE,ESERO,__EMPTY__,No,HISPANIC,M,GERMANTOWN,MD,MD,A - Marked Patrol
+22:00:00,5th district Germantown,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2013,TOYOTA,GRAY,ESERO,__EMPTY__,No,HISPANIC,M,GAITHERSBURG,MD,MD,A - Marked Patrol
+22:00:00,5th district Germantown,VEHICLE OR EQUIPMENT VIOLATION,MD,03 - Station Wagon,2003,TOYT,WHITE,ESERO,__EMPTY__,No,WHITE,F,GAITHERSBURG,MD,MD,A - Marked Patrol
+21:00:00,2nd district Bethesda,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2003,HONDA,RED,ESERO,__EMPTY__,No,ASIAN,M,BURTONSVILLE,MD,MD,A - Marked Patrol
 23:00:00,3rd district Silver Spring,RECKLESS DRIVING,MD,02 - Automobile,2010,AUDI,BLACK,Warning,Transportation Article,No,OTHER,M,SILVER SPRING,MD,MD,A - Marked Patrol
 5:00:00,2nd district Bethesda,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2015,DODGE,GRAY,Warning,Transportation Article,No,BLACK,M,DISTRICT HEIGHTS,MD,MD,Q - Marked Laser
 9:00:00,4th district Wheaton,MINOR INFRACTION,MD,02 - Automobile,2009,HONDA,BLACK,Warning,Transportation Article,No,ASIAN,M,BETHESDA,MD,MD,A - Marked Patrol
@@ -4365,10 +4365,10 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 6:00:00,2nd district Bethesda,RECKLESS DRIVING,MD,02 - Automobile,2000,HONDA,SILVER,Warning,Transportation Article,No,WHITE,F,WALDORF,MD,MD,B - Unmarked Patrol
 6:00:00,2nd district Bethesda,RECKLESS DRIVING,NY,02 - Automobile,2016,TOYOTA,BLACK,Warning,Transportation Article,No,BLACK,M,BROOKLYN,NY,NY,B - Unmarked Patrol
 6:00:00,2nd district Bethesda,RECKLESS DRIVING,MD,03 - Station Wagon,2008,HONDA,BLACK,Warning,Transportation Article,No,BLACK,F,CRISFIELD,MD,MD,B - Unmarked Patrol
-9:00:00,6th district Gaithersburg / Montgomery Village,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2008,CHEVROLET,GRAY,ESERO,,No,BLACK,F,GAITHERSBURG,MD,MD,E - Marked Stationary Radar
-23:00:00,4th district Wheaton,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2008,NISSAN,BLACK,ESERO,,No,HISPANIC,F,SILVER SPRING,MD,MD,A - Marked Patrol
-23:00:00,2nd district Bethesda,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2010,LEXUS,BLACK,ESERO,,No,NATIVE AMERICAN,M,KENSINGTON,MD,MD,A - Marked Patrol
-23:00:00,2nd district Bethesda,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2002,DODGE,SILVER,ESERO,,No,WHITE,F,KENSINGTON,MD,MD,A - Marked Patrol
+9:00:00,6th district Gaithersburg / Montgomery Village,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2008,CHEVROLET,GRAY,ESERO,__EMPTY__,No,BLACK,F,GAITHERSBURG,MD,MD,E - Marked Stationary Radar
+23:00:00,4th district Wheaton,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2008,NISSAN,BLACK,ESERO,__EMPTY__,No,HISPANIC,F,SILVER SPRING,MD,MD,A - Marked Patrol
+23:00:00,2nd district Bethesda,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2010,LEXUS,BLACK,ESERO,__EMPTY__,No,NATIVE AMERICAN,M,KENSINGTON,MD,MD,A - Marked Patrol
+23:00:00,2nd district Bethesda,VEHICLE OR EQUIPMENT VIOLATION,MD,02 - Automobile,2002,DODGE,SILVER,ESERO,__EMPTY__,No,WHITE,F,KENSINGTON,MD,MD,A - Marked Patrol
 10:00:00,5th district Germantown,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2010,HONDA,SILVER,Citation,Transportation Article,No,BLACK,F,BOYDS,MD,MD,A - Marked Patrol
 3:00:00,Headquarters and Special Operations,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2002,MERCEDES,SILVER,Citation,Transportation Article,No,HISPANIC,M,SILVER SPRING,MD,MD,A - Marked Patrol
 7:00:00,4th district Wheaton,SPEEDING,MD,02 - Automobile,2016,INFINITI,BLACK,Citation,Transportation Article,Yes,WHITE,M,BETHESDA,MD,MD,A - Marked Patrol
@@ -4660,7 +4660,7 @@ TimeOfStop,SubAgency,Description,State,VehicleType,Year,Make,Color,ViolationType
 23:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2006,CHEV,WHITE,Citation,Transportation Article,No,BLACK,M,ROCKVILLE,MD,MD,A - Marked Patrol
 23:00:00,4th district Wheaton,LICENSE OR REGISTRATION RELATED,MD,02 - Automobile,2006,CHEV,WHITE,Citation,Transportation Article,No,BLACK,M,ROCKVILLE,MD,MD,A - Marked Patrol
 23:00:00,Headquarters and Special Operations,SPEEDING,MD,02 - Automobile,1995,HONDA,GRAY,Citation,Transportation Article,No,WHITE,M,CHEVY CHASE,MD,MD,A - Marked Patrol
-23:00:00,Headquarters and Special Operations,LICENSE OR REGISTRATION RELATED,XX,29 - Unknown,,NONE,N/A,Citation,Transportation Article,No,WHITE,M,CHEVY CHASE,MD,MD,A - Marked Patrol
+23:00:00,Headquarters and Special Operations,LICENSE OR REGISTRATION RELATED,XX,29 - Unknown,__EMPTY__,NONE,N/A,Citation,Transportation Article,No,WHITE,M,CHEVY CHASE,MD,MD,A - Marked Patrol
 0:00:00,Headquarters and Special Operations,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2014,HYUN,BLUE,Citation,Transportation Article,No,WHITE,M,POTOMAC,MD,MD,A - Marked Patrol
 0:00:00,Headquarters and Special Operations,IMPAIRED BY DRUGS OR ALCOHOL,MD,02 - Automobile,2014,HYUN,BLUE,Citation,Transportation Article,No,WHITE,M,POTOMAC,MD,MD,A - Marked Patrol
 23:00:00,5th district Germantown,SPEEDING,MD,02 - Automobile,2013,TOYT,MAROON,Citation,Transportation Article,No,HISPANIC,M,GERMANTOWN,MD,MD,Q - Marked Laser

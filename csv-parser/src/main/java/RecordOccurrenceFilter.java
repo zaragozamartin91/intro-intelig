@@ -3,20 +3,23 @@ import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 
 import java.io.*;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import java.nio.file.Files;
+import java.text.ParseException;
+import java.util.*;
 
+/**
+ * Filtro de registros con bajas ocurrencias dado una columna
+ */
 public class RecordOccurrenceFilter {
     private String fileName;
     private String colName;
-    private double occPercentage;
+    private int minRecordCount;
     private String outFileName;
 
-    public RecordOccurrenceFilter(String fileName, String colName, double occPercentage, String outFileName) {
+    public RecordOccurrenceFilter(String fileName, String colName, int minRecordCount, String outFileName) {
         this.fileName = fileName;
         this.colName = colName;
-        this.occPercentage = occPercentage;
+        this.minRecordCount = minRecordCount;
         this.outFileName = outFileName;
     }
 
@@ -50,7 +53,7 @@ public class RecordOccurrenceFilter {
             Iterator<CSVRecord> recordIterator = parser.iterator();
             CSVRecord header = recordIterator.next();
 
-            final int colIdx = getColIdx(header);
+            final int colIdx = Utils.getColIdx(header, colName);
 
             final Map<String, Counter> occurrences = new HashMap<>();
             final Counter recordCounter = new Counter();
@@ -62,20 +65,24 @@ public class RecordOccurrenceFilter {
                 recordCounter.augment();
             });
 
+            System.out.println();
+            System.out.println("Occurrences:");
+            Set<Map.Entry<String, Counter>> entries = occurrences.entrySet();
+            entries.forEach(entry -> System.out.printf("%s -> %d%n", entry.getKey(), entry.getValue().count));
+
             return new DatasetInfo(occurrences, colIdx, recordCounter);
         } finally {
-
             csvReader.close();
         }
     }
 
-    private int getColIdx(CSVRecord header) {
-        int idx = 0;
-        for (; ; idx++) if (colName.equalsIgnoreCase(header.get(idx))) break;
-        return idx;
-    }
 
-    public void filter() throws IOException {
+    public void filter() throws IOException, ParseException {
+        try {
+            Files.delete(new File(outFileName).toPath());
+            System.out.println(outFileName + " eliminado");
+        } catch (IOException e) {}
+
         final DatasetInfo datasetInfo = parseDataset();
         final Map<String, Counter> occurrences = datasetInfo.occurrences;
         final int colIdx = datasetInfo.colIdx;
@@ -86,16 +93,32 @@ public class RecordOccurrenceFilter {
         BufferedReader csvReader = new BufferedReader(new InputStreamReader(filestream));
         CSVParser parser = CSVParser.parse(csvReader, CSVFormat.EXCEL);
 
+        Set<String> remainingCategories = new HashSet<>();
+
         try {
             final Iterator<CSVRecord> recordIterator = parser.iterator();
             final CSVRecord header = recordIterator.next();
 
+            Utils.writeRecord(header, writer);
+
             recordIterator.forEachRemaining(record -> {
                 final String value = record.get(colIdx);
-                double count = occurrences.get(value).count;
-                double average = count / recordCount;
+                int count = occurrences.get(value).count;
 
+                if (count >= minRecordCount) try {
+                    Utils.writeRecord(record, writer);
+                    remainingCategories.add(value);
+                } catch (ParseException e) {
+                    throw new RuntimeException("Error al escribir los registros");
+                }
             });
+
+            System.out.println();
+            int delCatCount = occurrences.size() - remainingCategories.size();
+            System.out.println("# Categorias eliminadas: " + delCatCount);
+            System.out.println("Categorias pendientes:");
+            remainingCategories.forEach(cat -> System.out.println(cat));
+
         } finally {
             writer.close();
             csvReader.close();

@@ -62,7 +62,8 @@ public class CsvNormalizer {
         for (int i = 0; i < HEADER_INDEXES.length; i++) {
             int headerIndex = HEADER_INDEXES[i];
 
-            String value = removeCommas(record.get(headerIndex));
+            String value = removeCommas(record.get(headerIndex)).trim();
+            value = value.isEmpty() ? "__EMPTY__" : value;
             if (headerIndex == DESC_HEADER_INDEX) value = standarizeDescription(value);
             else if (headerIndex == TIME_HEADER_INDEX) value = standarizeTime(value);
 

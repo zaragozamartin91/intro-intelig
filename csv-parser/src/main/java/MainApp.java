@@ -28,7 +28,7 @@ public class MainApp {
 
 
         System.out.println();
-        final RecordOccurrenceFilter occurrenceFilter = new RecordOccurrenceFilter(outFilePath, "description", 0.07, "out_2.csv");
+        final RecordOccurrenceFilter occurrenceFilter = new RecordOccurrenceFilter(outFilePath, "description", 50, "out_2.csv");
         occurrenceFilter.filter();
     }
 

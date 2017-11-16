@@ -11,30 +11,22 @@ public class Utils {
         StringBuilder recordLine = new StringBuilder();
 
         for (int i = 0; i < Config.HEADER_INDEXES.length; i++) {
-            int headerIndex = Config.HEADER_INDEXES[i];
-
-            String value = removeCommas(record.get(headerIndex));
-            if (headerIndex == Config.DESC_HEADER_INDEX) value = standarizeDescription(value);
-            else if (headerIndex == Config.TIME_HEADER_INDEX) value = standarizeTime(value);
-
+            String value = removeCommas(record.get(i));
             if (i == Config.LAST_HEADER_INDEX) recordLine.append(value);
-            else recordLine.append(value + ",");
+            else recordLine.append(value + ", ");
         }
 
         writer.println(recordLine.toString());
     }
 
-    public static String standarizeTime(String value) throws ParseException {
-        if (value.startsWith("0")) value = "0" + value;
-        Date date = Config.DATE_FORMAT.parse(value);
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTime(date);
-        int hour = calendar.get(Calendar.HOUR_OF_DAY);
-
-        return hour + ":00:00";
-    }
 
     public static String removeCommas(String value) {
         return value.replaceAll(Pattern.quote(","), "");
+    }
+
+    public static int getColIdx(CSVRecord header, String colName) {
+        int idx = 0;
+        for (; ; idx++) if (colName.equalsIgnoreCase(header.get(idx))) break;
+        return idx;
     }
 }
