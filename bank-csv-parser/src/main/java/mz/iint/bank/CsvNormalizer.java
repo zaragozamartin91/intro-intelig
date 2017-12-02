@@ -11,6 +11,7 @@ import java.util.*;
 
 public class CsvNormalizer {
     private final List<RecordFilter> filters;
+    private final List<RecordTransformer> transformers;
     private final CsvStats csvStats = new CsvStats();
 
     private String outFilePath;
@@ -18,11 +19,12 @@ public class CsvNormalizer {
     private final int recordsToKeep;
     private int writtenRecords = 0;
 
-    public CsvNormalizer(String outFilePath, String inFileName, int recordsToKeep, Collection filters) {
+    public CsvNormalizer(String outFilePath, String inFileName, int recordsToKeep, Collection filters, Collection transformers) {
         this.outFilePath = outFilePath;
         this.inFileName = inFileName;
         this.recordsToKeep = recordsToKeep;
         this.filters = new ArrayList<>(filters);
+        this.transformers = new ArrayList<>(transformers);
     }
 
     public void parse() throws IOException, ParseException {
@@ -89,8 +91,17 @@ public class CsvNormalizer {
         return s.replaceAll(" +", "");
     }
 
+    private CSVRecord transformRecord(CSVRecord record) {
+        for (RecordTransformer transformer : transformers) {
+            record = transformer.transform(record);
+        }
+        return record;
+    }
+
     private void writeRecord(CSVRecord record, PrintWriter writer) throws ParseException {
         StringBuilder recordLine = new StringBuilder();
+
+        record = transformRecord(record);
 
         final Integer[] headerIndexes = Configuration.get().headerIndexes();
         for (int i = 0; i < headerIndexes.length; i++) {

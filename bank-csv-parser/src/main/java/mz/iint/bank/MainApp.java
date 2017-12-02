@@ -3,6 +3,7 @@ package mz.iint.bank;
 import java.io.*;
 import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Properties;
 import java.util.regex.Pattern;
@@ -67,8 +68,18 @@ public class MainApp {
         filters.add(new ValueFilter(3, "unknown"));
         filters.add(new ValueFilter(5, "unknown"));
         filters.add(new ValueFilter(6, "unknown"));
+        filters.add(new ValueFilter(3, "illiterate"));
 
-        final CsvNormalizer csvNormalizer = new CsvNormalizer(outFilePath, inFileName, recordsToKeep, filters);
+        List<RecordTransformer> transformers = new ArrayList<>();
+
+        if (Configuration.get().ageTransformerActive()) {
+            final AgeTransformer ageTransformer = new AgeTransformer(Configuration.get().ageIndex());
+            transformers.add(ageTransformer);
+        }
+
+
+
+        final CsvNormalizer csvNormalizer = new CsvNormalizer(outFilePath, inFileName, recordsToKeep, filters, transformers);
         csvNormalizer.parse();
     }
 

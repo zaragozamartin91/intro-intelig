@@ -20,6 +20,8 @@ public class Configuration {
     private Double yesnoRatio;
     private Boolean zeroDurationFilterActive;
     private Integer durationIndex;
+    private Boolean ageTransformerActive;
+    private Integer ageIndex;
 
 
     public static Configuration get() {
@@ -51,6 +53,10 @@ public class Configuration {
 
         configuration.zeroDurationFilterActive = Boolean.valueOf(properties.getProperty("filters.zeroduration.active", "false").toLowerCase());
         configuration.durationIndex = Integer.valueOf(properties.getProperty("duration.index"));
+
+        configuration.ageTransformerActive = Boolean.valueOf(properties.getProperty("transformers.age.active", "false").toLowerCase());
+
+        configuration.ageIndex = Integer.valueOf(properties.getProperty("age.index", "0"));
 
         return configuration;
     }
@@ -93,5 +99,13 @@ public class Configuration {
 
     public Integer durationIndex() {
         return durationIndex;
+    }
+
+    public Boolean ageTransformerActive() {
+        return ageTransformerActive;
+    }
+
+    public Integer ageIndex() {
+        return ageIndex;
     }
 }
