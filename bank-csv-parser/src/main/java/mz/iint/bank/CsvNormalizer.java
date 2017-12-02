@@ -7,29 +7,22 @@ import org.apache.commons.csv.CSVRecord;
 import java.io.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class CsvNormalizer {
-    static final int[] HEADER_INDEXES = Config.HEADER_INDEXES;
-    static final int LAST_HEADER_INDEX = Config.LAST_HEADER_INDEX;
-    static final SimpleDateFormat DATE_FORMAT = Config.DATE_FORMAT;
     private final List<RecordFilter> filters;
-
     private final CsvStats csvStats = new CsvStats();
 
-    String outFilePath = "out.csv";
-    String inFileName = "bank-full.csv";
-    final int recordsToKeep;
-    int writtenRecords = 0;
+    private String outFilePath;
+    private String inFileName;
+    private final int recordsToKeep;
+    private int writtenRecords = 0;
 
-    public CsvNormalizer(String outFilePath, String inFileName, int recordsToKeep, RecordFilter... filters) {
+    public CsvNormalizer(String outFilePath, String inFileName, int recordsToKeep, Collection filters) {
         this.outFilePath = outFilePath;
         this.inFileName = inFileName;
         this.recordsToKeep = recordsToKeep;
-        this.filters = Arrays.asList(filters);
+        this.filters = new ArrayList<>(filters);
     }
 
     public void parse() throws IOException, ParseException {
@@ -63,19 +56,20 @@ public class CsvNormalizer {
     }
 
     public boolean isYes(CSVRecord record) {
-        final String value = Optional.ofNullable(record.get(Config.CLASS_INDEX)).orElse("");
+        final String value = Optional.ofNullable(record.get(Configuration.get().classIndex())).orElse("");
         return "yes".equalsIgnoreCase(value);
     }
 
     public boolean isNo(CSVRecord record) {
-        final String value = Optional.ofNullable(record.get(Config.CLASS_INDEX)).orElse("");
+        final String value = Optional.ofNullable(record.get(Configuration.get().classIndex())).orElse("");
         return "no".equalsIgnoreCase(value);
     }
 
     private void writeHeader(CSVRecord record, PrintWriter writer) {
-        StringBuilder headerLine = new StringBuilder(removeSpaces(record.get(HEADER_INDEXES[0])));
-        for (int i = 1; i < HEADER_INDEXES.length; i++) {
-            headerLine.append("," + removeSpaces(record.get(HEADER_INDEXES[i])));
+        final Integer[] headerIndexes = Configuration.get().headerIndexes();
+        StringBuilder headerLine = new StringBuilder(removeSpaces(record.get(headerIndexes[0])));
+        for (int i = 1; i < headerIndexes.length; i++) {
+            headerLine.append("," + removeSpaces(record.get(headerIndexes[i])));
         }
         writer.println(headerLine.toString());
     }
@@ -87,13 +81,14 @@ public class CsvNormalizer {
     private void writeRecord(CSVRecord record, PrintWriter writer) throws ParseException {
         StringBuilder recordLine = new StringBuilder();
 
-        for (int i = 0; i < HEADER_INDEXES.length; i++) {
-            int headerIndex = HEADER_INDEXES[i];
+        final Integer[] headerIndexes = Configuration.get().headerIndexes();
+        for (int i = 0; i < headerIndexes.length; i++) {
+            int headerIndex = headerIndexes[i];
 
             String value = record.get(headerIndex).trim();
             value = value.isEmpty() ? "__EMPTY__" : value;
 
-            if (i == LAST_HEADER_INDEX) recordLine.append(value);
+            if (i == Configuration.get().lastIndex()) recordLine.append(value);
             else recordLine.append(value + ",");
         }
 
