@@ -81,7 +81,8 @@ public class CsvNormalizer {
         calendar.setTime(date);
         int hour = calendar.get(Calendar.HOUR_OF_DAY);
 
-        return hour + ":00:00";
+//        return hour + ":00:00";
+        return "" + hour;
     }
 
     private String removeCommas(String value) {

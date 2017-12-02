@@ -1,9 +1,10 @@
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 
-import java.io.PrintWriter;
+import java.io.*;
 import java.text.ParseException;
-import java.util.Calendar;
-import java.util.Date;
+import java.util.*;
 import java.util.regex.Pattern;
 
 public class Utils {
@@ -26,7 +27,42 @@ public class Utils {
 
     public static int getColIdx(CSVRecord header, String colName) {
         int idx = 0;
-        for (; ; idx++) if (colName.equalsIgnoreCase(header.get(idx))) break;
+        for (; ; idx++) {
+            final String headerName = header.get(idx).trim();
+            if (colName.equalsIgnoreCase(headerName)) break;
+        }
         return idx;
+    }
+
+    public static DatasetInfo parseDataset(String fileName, String colName) throws IOException {
+        InputStream filestream = new FileInputStream(fileName);
+        BufferedReader csvReader = new BufferedReader(new InputStreamReader(filestream));
+
+        try {
+            CSVParser parser = CSVParser.parse(csvReader, CSVFormat.EXCEL);
+            Iterator<CSVRecord> recordIterator = parser.iterator();
+            CSVRecord header = recordIterator.next();
+
+            final int colIdx = Utils.getColIdx(header, colName);
+
+            final Map<String, Counter> occurrences = new HashMap<>();
+            final Counter recordCounter = new Counter();
+
+            recordIterator.forEachRemaining(record -> {
+                String item = record.get(colIdx);
+                final Counter itemCounter = occurrences.getOrDefault(item, new Counter()).augment();
+                occurrences.put(item, itemCounter);
+                recordCounter.augment();
+            });
+
+            System.out.println();
+            System.out.println("Occurrences:");
+            Set<Map.Entry<String, Counter>> entries = occurrences.entrySet();
+            entries.forEach(entry -> System.out.printf("%s -> %d%n", entry.getKey(), entry.getValue().count));
+
+            return new DatasetInfo(occurrences, colIdx, recordCounter);
+        } finally {
+            csvReader.close();
+        }
     }
 }
