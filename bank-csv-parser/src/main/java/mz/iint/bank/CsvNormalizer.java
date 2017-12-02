@@ -46,21 +46,32 @@ public class CsvNormalizer {
             System.out.println(record);
         }
 
+        System.out.println("Registros escritos: " + writtenRecords);
         parser.close();
     }
 
 
-    public boolean recordOk(CSVRecord record) {
-        for (RecordFilter filter : filters) if (filter.filter(record, csvStats)) return true;
-        return false;
+    /**
+     * Aplica los filtros sobre el registro y determina si el mismo debe ser escrito en el CSV final
+     *
+     * @param record Registro a analizar.
+     * @return True si el registro debe escribirse, false en caso contrario.
+     */
+    private boolean recordOk(CSVRecord record) {
+        boolean ok = true;
+        for (RecordFilter filter : filters) {
+            ok &= filter.filter(record, csvStats);
+            if (!ok) break;
+        }
+        return ok;
     }
 
-    public boolean isYes(CSVRecord record) {
+    private boolean isYes(CSVRecord record) {
         final String value = Optional.ofNullable(record.get(Configuration.get().classIndex())).orElse("");
         return "yes".equalsIgnoreCase(value);
     }
 
-    public boolean isNo(CSVRecord record) {
+    private boolean isNo(CSVRecord record) {
         final String value = Optional.ofNullable(record.get(Configuration.get().classIndex())).orElse("");
         return "no".equalsIgnoreCase(value);
     }

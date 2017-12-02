@@ -18,6 +18,8 @@ public class Configuration {
     private Integer lastIndex;
     private Boolean yesnoFilterActive;
     private Double yesnoRatio;
+    private Boolean zeroDurationFilterActive;
+    private Integer durationIndex;
 
 
     public static Configuration get() {
@@ -46,6 +48,9 @@ public class Configuration {
 
         configuration.yesnoFilterActive = Boolean.valueOf(properties.getProperty("filters.yesno.active", "false").toLowerCase());
         configuration.yesnoRatio = Double.valueOf(properties.getProperty("filters.yesno.ratio", "0.5"));
+
+        configuration.zeroDurationFilterActive = Boolean.valueOf(properties.getProperty("filters.zeroduration.active", "false").toLowerCase());
+        configuration.durationIndex = Integer.valueOf(properties.getProperty("duration.index"));
 
         return configuration;
     }
@@ -80,5 +85,13 @@ public class Configuration {
 
     public Double yesnoRatio() {
         return yesnoRatio;
+    }
+
+    public Boolean zeroDurationFilterActive() {
+        return zeroDurationFilterActive;
+    }
+
+    public Integer durationIndex() {
+        return durationIndex;
     }
 }
