@@ -1,5 +1,14 @@
 package mz.iint.bank;
 
+import mz.iint.bank.filter.RecordFilter;
+import mz.iint.bank.filter.ValueFilter;
+import mz.iint.bank.filter.YesNoFilter;
+import mz.iint.bank.filter.ZeroDurationFilter;
+import mz.iint.bank.trans.AgeTransformer;
+import mz.iint.bank.trans.MonthTransformer;
+import mz.iint.bank.trans.PdaysTransformer;
+import mz.iint.bank.trans.RecordTransformer;
+
 import java.io.*;
 import java.text.ParseException;
 import java.util.ArrayList;
@@ -12,6 +21,13 @@ public class MainApp {
     public static void main(String[] args) throws IOException, ParseException {
         run(args);
 //        normalize();
+        numerize();
+    }
+
+    private static void numerize() throws IOException, ParseException {
+//        configure();
+        final CsvNumerizer csvNumerizer = new CsvNumerizer(Configuration.get().outFile(), Configuration.get().outNumFile());
+        csvNumerizer.run();
     }
 
     /**
@@ -36,11 +52,7 @@ public class MainApp {
     }
 
     private static void run(String[] args) throws IOException, ParseException {
-        final InputStream configStream = MainApp.class.getClassLoader().getResourceAsStream("app.properties");
-        Properties configProperties = new Properties();
-        configProperties.load(configStream);
-
-        Configuration.load(configProperties);
+        configure();
 
         int recordsToKeep = Configuration.get().recordsToKeep();
 
@@ -81,8 +93,20 @@ public class MainApp {
             transformers.add(pdaysTransformer);
         }
 
-        final CsvNormalizer csvNormalizer = new CsvNormalizer(outFilePath, inFileName, recordsToKeep, filters, transformers);
+        if (Configuration.get().monthTransformerActive()) {
+            final MonthTransformer monthTransformer = new MonthTransformer(8);
+            transformers.add(monthTransformer);
+        }
+
+        final CsvNormalizer csvNormalizer = new CsvNormalizer(inFileName, outFilePath, recordsToKeep, filters, transformers);
         csvNormalizer.parse();
+    }
+
+    private static void configure() throws IOException {
+        Properties configProperties = new Properties();
+        configProperties.load(new FileInputStream("app.properties"));
+
+        Configuration.load(configProperties);
     }
 
 }

@@ -1,12 +1,13 @@
 package mz.iint.bank;
 
+import mz.iint.bank.filter.RecordFilter;
+import mz.iint.bank.trans.RecordTransformer;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 
 import java.io.*;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class CsvNormalizer {
@@ -19,7 +20,7 @@ public class CsvNormalizer {
     private final int recordsToKeep;
     private int writtenRecords = 0;
 
-    public CsvNormalizer(String outFilePath, String inFileName, int recordsToKeep, Collection filters, Collection transformers) {
+    public CsvNormalizer(String inFileName, String outFilePath, int recordsToKeep, Collection filters, Collection transformers) {
         this.outFilePath = outFilePath;
         this.inFileName = inFileName;
         this.recordsToKeep = recordsToKeep;
@@ -50,6 +51,7 @@ public class CsvNormalizer {
 
         System.out.println("Registros escritos: " + writtenRecords);
         parser.close();
+        writer.close();
     }
 
 

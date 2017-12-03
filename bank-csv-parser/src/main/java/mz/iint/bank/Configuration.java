@@ -12,18 +12,25 @@ public class Configuration {
 
     private Integer[] headerIndexes;
     private Integer classIndex;
+
     private String inFile;
     private String outFile;
+    private String outNumFile;
+
     private Integer recordsToKeep;
     private Integer lastIndex;
+
     private Boolean yesnoFilterActive;
     private Double yesnoRatio;
     private Boolean zeroDurationFilterActive;
+
     private Integer durationIndex;
-    private Boolean ageTransformerActive;
     private Integer ageIndex;
-    private Boolean previousTransformerActive;
     private Integer previousIndex;
+
+    private Boolean ageTransformerActive;
+    private Boolean previousTransformerActive;
+    private Boolean monthTransformerActive;
 
 
     public static Configuration get() {
@@ -45,6 +52,7 @@ public class Configuration {
 
         configuration.inFile = properties.getProperty("in.file");
         configuration.outFile = properties.getProperty("out.file");
+        configuration.outNumFile = properties.getProperty("outnum.file");
 
         configuration.recordsToKeep = Integer.valueOf(properties.getProperty("records.limit"));
 
@@ -58,6 +66,7 @@ public class Configuration {
 
         configuration.ageTransformerActive = Boolean.valueOf(properties.getProperty("transformers.age.active", "false").toLowerCase());
         configuration.previousTransformerActive = Boolean.valueOf(properties.getProperty("transformers.pdays.active", "false").toLowerCase());
+        configuration.monthTransformerActive = Boolean.valueOf(properties.getProperty("transformers.month.active", "false").toLowerCase());
 
         configuration.ageIndex = Integer.valueOf(properties.getProperty("age.index", "0"));
         configuration.previousIndex = Integer.valueOf(properties.getProperty("pdays.index", "12"));
@@ -119,5 +128,13 @@ public class Configuration {
 
     public Integer previousIndex() {
         return previousIndex;
+    }
+
+    public Boolean monthTransformerActive() {
+        return monthTransformerActive;
+    }
+
+    public String outNumFile() {
+        return outNumFile;
     }
 }
