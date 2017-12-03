@@ -3,7 +3,6 @@ package mz.iint.bank;
 import java.io.*;
 import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.Properties;
 import java.util.regex.Pattern;
@@ -77,7 +76,10 @@ public class MainApp {
             transformers.add(ageTransformer);
         }
 
-
+        if (Configuration.get().previousTransformerActive()) {
+            final PdaysTransformer pdaysTransformer = new PdaysTransformer(Configuration.get().previousIndex());
+            transformers.add(pdaysTransformer);
+        }
 
         final CsvNormalizer csvNormalizer = new CsvNormalizer(outFilePath, inFileName, recordsToKeep, filters, transformers);
         csvNormalizer.parse();

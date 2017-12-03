@@ -27,11 +27,11 @@ public class AgeTransformer implements RecordTransformer {
         final Integer age = Integer.valueOf(record.get(ageIndex));
         String sage;
 
-        if (age < 30) sage = "<30";
-        else if (age < 40) sage = "30-40";
-        else if (age < 50) sage = "40-50";
-        else if (age < 60) sage = "50-60";
-        else sage = ">60";
+        if (age < 30) sage = "lt30";
+        else if (age < 40) sage = "30to40";
+        else if (age < 50) sage = "40to50";
+        else if (age < 60) sage = "50to60";
+        else sage = "gt60";
 
         try {
             final String[] values = (String[]) valuesField.get(record);

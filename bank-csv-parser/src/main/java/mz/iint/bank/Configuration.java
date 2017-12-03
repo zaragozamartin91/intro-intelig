@@ -22,6 +22,8 @@ public class Configuration {
     private Integer durationIndex;
     private Boolean ageTransformerActive;
     private Integer ageIndex;
+    private Boolean previousTransformerActive;
+    private Integer previousIndex;
 
 
     public static Configuration get() {
@@ -55,8 +57,10 @@ public class Configuration {
         configuration.durationIndex = Integer.valueOf(properties.getProperty("duration.index"));
 
         configuration.ageTransformerActive = Boolean.valueOf(properties.getProperty("transformers.age.active", "false").toLowerCase());
+        configuration.previousTransformerActive = Boolean.valueOf(properties.getProperty("transformers.pdays.active", "false").toLowerCase());
 
         configuration.ageIndex = Integer.valueOf(properties.getProperty("age.index", "0"));
+        configuration.previousIndex = Integer.valueOf(properties.getProperty("pdays.index", "12"));
 
         return configuration;
     }
@@ -107,5 +111,13 @@ public class Configuration {
 
     public Integer ageIndex() {
         return ageIndex;
+    }
+
+    public Boolean previousTransformerActive() {
+        return previousTransformerActive;
+    }
+
+    public Integer previousIndex() {
+        return previousIndex;
     }
 }
