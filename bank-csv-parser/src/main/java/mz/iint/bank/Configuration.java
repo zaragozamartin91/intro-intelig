@@ -31,6 +31,8 @@ public class Configuration {
     private Boolean ageTransformerActive;
     private Boolean previousTransformerActive;
     private Boolean monthTransformerActive;
+    private Boolean durationTransformerActive;
+    private Boolean educationTransformerActive;
 
 
     public static Configuration get() {
@@ -67,6 +69,8 @@ public class Configuration {
         configuration.ageTransformerActive = Boolean.valueOf(properties.getProperty("transformers.age.active", "false").toLowerCase());
         configuration.previousTransformerActive = Boolean.valueOf(properties.getProperty("transformers.pdays.active", "false").toLowerCase());
         configuration.monthTransformerActive = Boolean.valueOf(properties.getProperty("transformers.month.active", "false").toLowerCase());
+        configuration.durationTransformerActive = Boolean.valueOf(properties.getProperty("transformers.duration.active", "false").toLowerCase());
+        configuration.educationTransformerActive = Boolean.valueOf(properties.getProperty("transformers.education.active", "false").toLowerCase());
 
         configuration.ageIndex = Integer.valueOf(properties.getProperty("age.index", "0"));
         configuration.previousIndex = Integer.valueOf(properties.getProperty("pdays.index", "12"));
@@ -136,5 +140,13 @@ public class Configuration {
 
     public String outNumFile() {
         return outNumFile;
+    }
+
+    public Boolean durationTransformerActive() {
+        return durationTransformerActive;
+    }
+
+    public Boolean educationTransformerActive() {
+        return educationTransformerActive;
     }
 }

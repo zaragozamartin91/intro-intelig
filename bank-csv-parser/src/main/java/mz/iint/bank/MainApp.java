@@ -4,10 +4,7 @@ import mz.iint.bank.filter.RecordFilter;
 import mz.iint.bank.filter.ValueFilter;
 import mz.iint.bank.filter.YesNoFilter;
 import mz.iint.bank.filter.ZeroDurationFilter;
-import mz.iint.bank.trans.AgeTransformer;
-import mz.iint.bank.trans.MonthTransformer;
-import mz.iint.bank.trans.PdaysTransformer;
-import mz.iint.bank.trans.RecordTransformer;
+import mz.iint.bank.trans.*;
 
 import java.io.*;
 import java.text.ParseException;
@@ -21,7 +18,7 @@ public class MainApp {
     public static void main(String[] args) throws IOException, ParseException {
         run(args);
 //        normalize();
-        numerize();
+//        numerize();
     }
 
     private static void numerize() throws IOException, ParseException {
@@ -96,6 +93,16 @@ public class MainApp {
         if (Configuration.get().monthTransformerActive()) {
             final MonthTransformer monthTransformer = new MonthTransformer(8);
             transformers.add(monthTransformer);
+        }
+
+        if (Configuration.get().durationTransformerActive()) {
+            final DurationTransformer durationTransformer = new DurationTransformer(10);
+            transformers.add(durationTransformer);
+        }
+
+        if (Configuration.get().educationTransformerActive()) {
+            EducationTransformer educationTransformer = new EducationTransformer(3);
+            transformers.add(educationTransformer);
         }
 
         final CsvNormalizer csvNormalizer = new CsvNormalizer(inFileName, outFilePath, recordsToKeep, filters, transformers);
