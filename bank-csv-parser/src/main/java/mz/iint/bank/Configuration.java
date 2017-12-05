@@ -26,13 +26,15 @@ public class Configuration {
 
     private Integer durationIndex;
     private Integer ageIndex;
-    private Integer previousIndex;
+    private Integer pdaysIndex;
 
     private Boolean ageTransformerActive;
-    private Boolean previousTransformerActive;
+    private Boolean pdaysTransformerActive;
     private Boolean monthTransformerActive;
     private Boolean durationTransformerActive;
     private Boolean educationTransformerActive;
+    private Boolean unknownDurationFilterActive;
+    private Boolean previousTransformerActive;
 
 
     public static Configuration get() {
@@ -62,18 +64,20 @@ public class Configuration {
 
         configuration.yesnoFilterActive = Boolean.valueOf(properties.getProperty("filters.yesno.active", "false").toLowerCase());
         configuration.yesnoRatio = Double.valueOf(properties.getProperty("filters.yesno.ratio", "0.5"));
-
         configuration.zeroDurationFilterActive = Boolean.valueOf(properties.getProperty("filters.zeroduration.active", "false").toLowerCase());
+        configuration.unknownDurationFilterActive = Boolean.valueOf(properties.getProperty("filters.unknown.active", "false").toLowerCase());
+
         configuration.durationIndex = Integer.valueOf(properties.getProperty("duration.index"));
 
         configuration.ageTransformerActive = Boolean.valueOf(properties.getProperty("transformers.age.active", "false").toLowerCase());
-        configuration.previousTransformerActive = Boolean.valueOf(properties.getProperty("transformers.pdays.active", "false").toLowerCase());
+        configuration.pdaysTransformerActive = Boolean.valueOf(properties.getProperty("transformers.pdays.active", "false").toLowerCase());
         configuration.monthTransformerActive = Boolean.valueOf(properties.getProperty("transformers.month.active", "false").toLowerCase());
         configuration.durationTransformerActive = Boolean.valueOf(properties.getProperty("transformers.duration.active", "false").toLowerCase());
         configuration.educationTransformerActive = Boolean.valueOf(properties.getProperty("transformers.education.active", "false").toLowerCase());
+        configuration.previousTransformerActive = Boolean.valueOf(properties.getProperty("transformers.previous.active", "false").toLowerCase());
 
         configuration.ageIndex = Integer.valueOf(properties.getProperty("age.index", "0"));
-        configuration.previousIndex = Integer.valueOf(properties.getProperty("pdays.index", "12"));
+        configuration.pdaysIndex = Integer.valueOf(properties.getProperty("pdays.index", "12"));
 
         return configuration;
     }
@@ -126,12 +130,12 @@ public class Configuration {
         return ageIndex;
     }
 
-    public Boolean previousTransformerActive() {
-        return previousTransformerActive;
+    public Boolean pdaysTransformerActive() {
+        return pdaysTransformerActive;
     }
 
-    public Integer previousIndex() {
-        return previousIndex;
+    public Integer pdaysIndex() {
+        return pdaysIndex;
     }
 
     public Boolean monthTransformerActive() {
@@ -148,5 +152,13 @@ public class Configuration {
 
     public Boolean educationTransformerActive() {
         return educationTransformerActive;
+    }
+
+    public Boolean unknownDurationFilterActive() {
+        return unknownDurationFilterActive;
+    }
+
+    public Boolean previousTransformerActive() {
+        return previousTransformerActive;
     }
 }

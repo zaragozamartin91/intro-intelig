@@ -71,12 +71,14 @@ public class MainApp {
             filters.add(zeroDurationFilter);
         }
 
-        filters.add(new ValueFilter(1, "unknown"));
-        filters.add(new ValueFilter(2, "unknown"));
-        filters.add(new ValueFilter(3, "unknown"));
-        filters.add(new ValueFilter(5, "unknown"));
-        filters.add(new ValueFilter(6, "unknown"));
-        filters.add(new ValueFilter(3, "illiterate"));
+        if (Configuration.get().unknownDurationFilterActive()) {
+            filters.add(new ValueFilter(1, "unknown"));
+            filters.add(new ValueFilter(2, "unknown"));
+            filters.add(new ValueFilter(3, "unknown"));
+            filters.add(new ValueFilter(5, "unknown"));
+            filters.add(new ValueFilter(6, "unknown"));
+            filters.add(new ValueFilter(3, "illiterate"));
+        }
 
         List<RecordTransformer> transformers = new ArrayList<>();
 
@@ -85,8 +87,8 @@ public class MainApp {
             transformers.add(ageTransformer);
         }
 
-        if (Configuration.get().previousTransformerActive()) {
-            final PdaysTransformer pdaysTransformer = new PdaysTransformer(Configuration.get().previousIndex());
+        if (Configuration.get().pdaysTransformerActive()) {
+            final PdaysTransformer pdaysTransformer = new PdaysTransformer(Configuration.get().pdaysIndex());
             transformers.add(pdaysTransformer);
         }
 
@@ -105,13 +107,19 @@ public class MainApp {
             transformers.add(educationTransformer);
         }
 
+        if (Configuration.get().previousTransformerActive()) {
+            PreviousTransformer previousTransformer = new PreviousTransformer(13);
+            transformers.add(previousTransformer);
+        }
+
         final CsvNormalizer csvNormalizer = new CsvNormalizer(inFileName, outFilePath, recordsToKeep, filters, transformers);
         csvNormalizer.parse();
     }
 
     private static void configure() throws IOException {
         Properties configProperties = new Properties();
-        configProperties.load(new FileInputStream("app.properties"));
+//        configProperties.load(new FileInputStream("app.properties"));
+        configProperties.load(MainApp.class.getClassLoader().getResourceAsStream("app.properties"));
 
         Configuration.load(configProperties);
     }

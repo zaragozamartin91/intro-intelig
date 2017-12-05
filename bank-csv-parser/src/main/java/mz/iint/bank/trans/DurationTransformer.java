@@ -27,10 +27,10 @@ public class DurationTransformer implements RecordTransformer {
         final Integer duration = Integer.valueOf(record.get(durationIndex));
         String sduration;
 
-        if (duration < 132) sduration = "lt131";
-        else if (duration < 262) sduration = "132to261";
-        else if (duration < 549) sduration = "262to548";
-        else sduration = "gt549";
+        if (duration < 103) sduration = "lt103";
+        else if (duration < 180) sduration = "103to180";
+        else if (duration < 320) sduration = "180to320";
+        else sduration = "gt320";
 
         try {
             final String[] values = (String[]) valuesField.get(record);

@@ -43,7 +43,7 @@ public class CsvNormalizer {
                     writeRecord(record, writer);
                     if (isYes(record)) csvStats.augmentYes();
                     else if (isNo(record)) csvStats.augmentNo();
-                    if (writtenRecords++ >= recordsToKeep) break;
+                    if (++writtenRecords > recordsToKeep && recordsToKeep > 0 ) break;
                 }
             }
             System.out.println(record);
