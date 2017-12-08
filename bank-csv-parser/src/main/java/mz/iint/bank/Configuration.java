@@ -42,6 +42,9 @@ public class Configuration {
     private Integer previousIndex;
     private Boolean previousFilterActive;
     private Double previousYesnoRatio;
+    private Boolean campaignFilterActive;
+    private Double campaignOneRatio;
+    private Integer campaignIndex;
 
 
     public static Configuration get() {
@@ -76,16 +79,18 @@ public class Configuration {
 
         configuration.lastIndex = configuration.headerIndexes.length - 1;
 
+
         configuration.yesnoFilterActive = Boolean.valueOf(properties.getProperty("filters.yesno.active", "false").toLowerCase());
         configuration.yesnoRatio = Double.valueOf(properties.getProperty("filters.yesno.ratio", "0.5"));
+
         configuration.zeroDurationFilterActive = Boolean.valueOf(properties.getProperty("filters.zeroduration.active", "false").toLowerCase());
         configuration.unknownDurationFilterActive = Boolean.valueOf(properties.getProperty("filters.unknown.active", "false").toLowerCase());
+
         configuration.previousFilterActive = Boolean.valueOf(properties.getProperty("filters.previous.active", "false").toLowerCase());
         configuration.previousYesnoRatio = Double.valueOf(properties.getProperty("filters.previous.yesno.ratio", "0.5"));
 
-
-        configuration.durationIndex = Integer.valueOf(properties.getProperty("duration.index"));
-        configuration.previousIndex = Integer.valueOf(properties.getProperty("previous.index"));
+        configuration.campaignFilterActive = Boolean.valueOf(properties.getProperty("filters.campaign.active", "false").toLowerCase());
+        configuration.campaignOneRatio = Double.valueOf(properties.getProperty("filters.campaign.one.ratio", "0.5"));
 
 
         configuration.ageTransformerActive = Boolean.valueOf(properties.getProperty("transformers.age.active", "false").toLowerCase());
@@ -100,6 +105,10 @@ public class Configuration {
 
         configuration.ageIndex = Integer.valueOf(properties.getProperty("age.index", "0"));
         configuration.pdaysIndex = Integer.valueOf(properties.getProperty("pdays.index", "12"));
+        configuration.durationIndex = Integer.valueOf(properties.getProperty("duration.index"));
+        configuration.previousIndex = Integer.valueOf(properties.getProperty("previous.index"));
+        configuration.campaignIndex = Integer.valueOf(properties.getProperty("campaign.index"));
+
 
         return configuration;
     }
@@ -206,5 +215,17 @@ public class Configuration {
 
     public Double previousYesnoRatio() {
         return previousYesnoRatio;
+    }
+
+    public Boolean campaignFilterActive() {
+        return campaignFilterActive;
+    }
+
+    public Double campaignOneRatio() {
+        return campaignOneRatio;
+    }
+
+    public Integer campaignIndex() {
+        return campaignIndex;
     }
 }

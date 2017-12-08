@@ -20,8 +20,8 @@ public class YesNoFilter implements RecordFilter {
      */
     public YesNoFilter(int limit, double yesRatio, int classIndex) {
         this.limit = limit;
-        this.noLimit = (int) Math.floor((1 - yesRatio) * limit);
         this.yesLimit = (int) Math.floor(yesRatio * limit);
+        this.noLimit = (int) Math.floor(limit - yesLimit);
         this.classIndex = classIndex;
     }
 

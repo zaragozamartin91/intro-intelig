@@ -74,11 +74,15 @@ public class MainApp {
             filters.add(new ValueFilter(3, "illiterate"));  // education
             filters.add(new ValueFilter(3, "unknown"));     // education
             filters.add(new ValueFilter(5, "unknown"));     // housing
-            filters.add(new ValueFilter(6, "unknown"));     // loan
+//            filters.add(new ValueFilter(6, "unknown"));     // loan
         }
 
         if (Configuration.get().previousFilterActive()) {
             filters.add(new PreviousFilter(Configuration.get().recordsToKeep(), Configuration.get().previousYesnoRatio(), Configuration.get().previousIndex()));
+        }
+
+        if (Configuration.get().campaignFilterActive()) {
+            filters.add(new CampaignFilter(Configuration.get().recordsToKeep(), Configuration.get().campaignOneRatio(), Configuration.get().campaignIndex()));
         }
 
         List<RecordTransformer> transformers = new ArrayList<>();

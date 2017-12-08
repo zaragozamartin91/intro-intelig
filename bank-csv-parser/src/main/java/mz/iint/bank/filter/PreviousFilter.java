@@ -20,8 +20,8 @@ public class PreviousFilter implements RecordFilter {
      */
     public PreviousFilter(int limit, double yesRatio, int previousIndex) {
         this.limit = limit;
-        this.noLimit = (int) Math.floor((1 - yesRatio) * limit);
         this.yesLimit = (int) Math.floor(yesRatio * limit);
+        this.noLimit = (int) Math.floor(limit - yesLimit);
         this.previousIndex = previousIndex;
     }
 

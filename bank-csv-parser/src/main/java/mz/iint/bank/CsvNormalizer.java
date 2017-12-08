@@ -1,5 +1,6 @@
 package mz.iint.bank;
 
+import mz.iint.bank.filter.CampaignFilter;
 import mz.iint.bank.filter.PreviousFilter;
 import mz.iint.bank.filter.RecordFilter;
 import mz.iint.bank.trans.RecordTransformer;
@@ -42,13 +43,16 @@ public class CsvNormalizer {
                 writeHeader(record, writer);
             } else {
                 if (recordOk(record)) {
+                    if (PreviousFilter.isYes(record, Configuration.get().previousIndex())) csvStats.augmentPrevYes();
+                    else if (PreviousFilter.isNo(record, Configuration.get().previousIndex())) csvStats.augmentPrevNo();
+
+                    if (CampaignFilter.isOne(record, Configuration.get().campaignIndex())) csvStats.augmentCampOne();
+                    else if (CampaignFilter.isGreater(record, Configuration.get().campaignIndex())) csvStats.augmentCampGreater();
+
                     writeRecord(record, writer);
 
                     if (isYes(record)) csvStats.augmentYes();
                     else if (isNo(record)) csvStats.augmentNo();
-
-                    if (PreviousFilter.isYes(record, Configuration.get().previousIndex())) csvStats.augmentPrevYes();
-                    if (PreviousFilter.isNo(record, Configuration.get().previousIndex())) csvStats.augmentPrevNo();
 
                     ++writtenRecords;
                     if (recordsToKeep > 0 && writtenRecords > recordsToKeep) break;

@@ -7,6 +7,9 @@ public class CsvStats {
     private int prevYesCount = 0;
     private int prevNoCount = 0;
 
+    private int campOneCount = 0;
+    private int campGreaterCount = 0;
+
     public void augmentYes() { ++yescount; }
 
     public void augmentNo() { ++nocount; }
@@ -14,6 +17,10 @@ public class CsvStats {
     public void augmentPrevYes() { ++prevYesCount; }
 
     public void augmentPrevNo() { ++prevNoCount; }
+
+    public void augmentCampOne() { ++campOneCount; }
+
+    public void augmentCampGreater() { ++campGreaterCount; }
 
     public int getTotalCount() { return yescount + nocount; }
 
@@ -31,5 +38,13 @@ public class CsvStats {
 
     public int getPrevNoCount() {
         return prevNoCount;
+    }
+
+    public int getCampOneCount() {
+        return campOneCount;
+    }
+
+    public int getCampGreaterCount() {
+        return campGreaterCount;
     }
 }
