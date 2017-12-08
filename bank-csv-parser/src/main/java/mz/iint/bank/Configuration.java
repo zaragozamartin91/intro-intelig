@@ -35,6 +35,13 @@ public class Configuration {
     private Boolean educationTransformerActive;
     private Boolean unknownDurationFilterActive;
     private Boolean previousTransformerActive;
+    private Boolean campaignTransformerActive;
+
+    private Integer[] mixedCategories;
+    private Boolean maritalTransformerActive;
+    private Integer previousIndex;
+    private Boolean previousFilterActive;
+    private Double previousYesnoRatio;
 
 
     public static Configuration get() {
@@ -45,11 +52,18 @@ public class Configuration {
 
     public static Configuration load(Properties properties) {
         Configuration configuration = get();
+
         final String sheaders = properties.getProperty("header.indexes");
         final JsonArray jsonheaders = Json.parse(sheaders).asArray();
         List<Integer> lheaders = new ArrayList<>();
         jsonheaders.forEach(item -> lheaders.add(item.asInt()));
         configuration.headerIndexes = lheaders.toArray(new Integer[0]);
+
+        final String smixedCategories = properties.getProperty("mixed.categories");
+        final JsonArray jsonMixedCategories = Json.parse(smixedCategories).asArray();
+        List<Integer> lMixedCategories = new ArrayList<>();
+        jsonMixedCategories.forEach(item -> lMixedCategories.add(item.asInt()));
+        configuration.mixedCategories = lMixedCategories.toArray(new Integer[0]);
 
         final String sclassidx = properties.getProperty("class.index");
         configuration.classIndex = Integer.valueOf(sclassidx);
@@ -66,8 +80,13 @@ public class Configuration {
         configuration.yesnoRatio = Double.valueOf(properties.getProperty("filters.yesno.ratio", "0.5"));
         configuration.zeroDurationFilterActive = Boolean.valueOf(properties.getProperty("filters.zeroduration.active", "false").toLowerCase());
         configuration.unknownDurationFilterActive = Boolean.valueOf(properties.getProperty("filters.unknown.active", "false").toLowerCase());
+        configuration.previousFilterActive = Boolean.valueOf(properties.getProperty("filters.previous.active", "false").toLowerCase());
+        configuration.previousYesnoRatio = Double.valueOf(properties.getProperty("filters.previous.yesno.ratio", "0.5"));
+
 
         configuration.durationIndex = Integer.valueOf(properties.getProperty("duration.index"));
+        configuration.previousIndex = Integer.valueOf(properties.getProperty("previous.index"));
+
 
         configuration.ageTransformerActive = Boolean.valueOf(properties.getProperty("transformers.age.active", "false").toLowerCase());
         configuration.pdaysTransformerActive = Boolean.valueOf(properties.getProperty("transformers.pdays.active", "false").toLowerCase());
@@ -75,6 +94,9 @@ public class Configuration {
         configuration.durationTransformerActive = Boolean.valueOf(properties.getProperty("transformers.duration.active", "false").toLowerCase());
         configuration.educationTransformerActive = Boolean.valueOf(properties.getProperty("transformers.education.active", "false").toLowerCase());
         configuration.previousTransformerActive = Boolean.valueOf(properties.getProperty("transformers.previous.active", "false").toLowerCase());
+        configuration.campaignTransformerActive = Boolean.valueOf(properties.getProperty("transformers.campaign.active", "false").toLowerCase());
+        configuration.maritalTransformerActive = Boolean.valueOf(properties.getProperty("transformers.marital.active", "false").toLowerCase());
+
 
         configuration.ageIndex = Integer.valueOf(properties.getProperty("age.index", "0"));
         configuration.pdaysIndex = Integer.valueOf(properties.getProperty("pdays.index", "12"));
@@ -160,5 +182,29 @@ public class Configuration {
 
     public Boolean previousTransformerActive() {
         return previousTransformerActive;
+    }
+
+    public Boolean campaignTransformerActive() {
+        return campaignTransformerActive;
+    }
+
+    public Integer[] mixedCategories() {
+        return mixedCategories;
+    }
+
+    public Boolean maritalTransformerActive() {
+        return maritalTransformerActive;
+    }
+
+    public Integer previousIndex() {
+        return previousIndex;
+    }
+
+    public Boolean previousFilterActive() {
+        return previousFilterActive;
+    }
+
+    public Double previousYesnoRatio() {
+        return previousYesnoRatio;
     }
 }

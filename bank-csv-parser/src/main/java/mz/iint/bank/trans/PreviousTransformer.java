@@ -27,9 +27,12 @@ public class PreviousTransformer implements RecordTransformer {
         final Integer previous = Integer.valueOf(record.get(previousIndex));
         String sprevious;
 
-        if (previous == 0) sprevious = "0";
-        else if (previous == 1) sprevious = "1";
-        else sprevious = "gt1";
+//        if (previous == 0) sprevious = "0";
+//        else if (previous == 1) sprevious = "1";
+//        else sprevious = "gt1";
+
+        if (previous == 0) sprevious = "no";
+        else sprevious = "yes";
 
         try {
             final String[] values = (String[]) valuesField.get(record);

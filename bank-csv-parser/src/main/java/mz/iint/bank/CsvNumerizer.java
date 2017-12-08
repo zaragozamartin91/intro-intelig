@@ -6,10 +6,13 @@ import org.apache.commons.csv.CSVRecord;
 
 import java.io.*;
 import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class CsvNumerizer {
     private final Category[] categories;
     private final Integer[] headerIndexes;
+    private List<String> headerNames = new ArrayList<>();
     private String outFilePath;
     private String inFileName;
 
@@ -19,7 +22,7 @@ public class CsvNumerizer {
         this.inFileName = inFileName;
 
         this.headerIndexes = Configuration.get().headerIndexes();
-        this.categories = Category.buildCategories(headerIndexes.length);
+        this.categories = Category.buildCategories(headerIndexes.length, Configuration.get().mixedCategories());
     }
 
     public void run() throws IOException, ParseException {
@@ -41,11 +44,17 @@ public class CsvNumerizer {
 
         parser.close();
         writer.close();
+
+        for (int i = 0; i < categories.length; i++) {
+            System.out.println(headerNames.get(i) + ": " + categories[i].getCategories());
+        }
     }
 
     private void writeHeader(CSVRecord record, PrintWriter writer) {
         StringBuilder headerLine = new StringBuilder(record.get(0));
+        headerNames.add(record.get(0));
         for (int i = 1; i < headerIndexes.length; i++) {
+            headerNames.add(record.get(i));
             headerLine.append("," + record.get(i));
         }
         writer.println(headerLine.toString());

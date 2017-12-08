@@ -1,9 +1,6 @@
 package mz.iint.bank;
 
-import mz.iint.bank.filter.RecordFilter;
-import mz.iint.bank.filter.ValueFilter;
-import mz.iint.bank.filter.YesNoFilter;
-import mz.iint.bank.filter.ZeroDurationFilter;
+import mz.iint.bank.filter.*;
 import mz.iint.bank.trans.*;
 
 import java.io.*;
@@ -22,7 +19,7 @@ public class MainApp {
     }
 
     private static void numerize() throws IOException, ParseException {
-//        configure();
+        configure();
         final CsvNumerizer csvNumerizer = new CsvNumerizer(Configuration.get().outFile(), Configuration.get().outNumFile());
         csvNumerizer.run();
     }
@@ -73,11 +70,15 @@ public class MainApp {
 
         if (Configuration.get().unknownDurationFilterActive()) {
             filters.add(new ValueFilter(1, "unknown"));
-            filters.add(new ValueFilter(2, "unknown"));
-            filters.add(new ValueFilter(3, "unknown"));
-            filters.add(new ValueFilter(5, "unknown"));
-            filters.add(new ValueFilter(6, "unknown"));
-            filters.add(new ValueFilter(3, "illiterate"));
+            filters.add(new ValueFilter(2, "unknown"));     //marital
+            filters.add(new ValueFilter(3, "illiterate"));  // education
+            filters.add(new ValueFilter(3, "unknown"));     // education
+            filters.add(new ValueFilter(5, "unknown"));     // housing
+            filters.add(new ValueFilter(6, "unknown"));     // loan
+        }
+
+        if (Configuration.get().previousFilterActive()) {
+            filters.add(new PreviousFilter(Configuration.get().recordsToKeep(), Configuration.get().previousYesnoRatio(), Configuration.get().previousIndex()));
         }
 
         List<RecordTransformer> transformers = new ArrayList<>();
@@ -110,6 +111,16 @@ public class MainApp {
         if (Configuration.get().previousTransformerActive()) {
             PreviousTransformer previousTransformer = new PreviousTransformer(13);
             transformers.add(previousTransformer);
+        }
+
+        if (Configuration.get().campaignTransformerActive()) {
+            CampaignTransformer campaignTransformer = new CampaignTransformer(11);
+            transformers.add(campaignTransformer);
+        }
+
+        if (Configuration.get().maritalTransformerActive()) {
+            MaritalTransformer maritalTransformer = new MaritalTransformer(2);
+            transformers.add(maritalTransformer);
         }
 
         final CsvNormalizer csvNormalizer = new CsvNormalizer(inFileName, outFilePath, recordsToKeep, filters, transformers);

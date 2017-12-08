@@ -1,5 +1,6 @@
 package mz.iint.bank;
 
+import mz.iint.bank.filter.PreviousFilter;
 import mz.iint.bank.filter.RecordFilter;
 import mz.iint.bank.trans.RecordTransformer;
 import org.apache.commons.csv.CSVFormat;
@@ -9,6 +10,7 @@ import org.apache.commons.csv.CSVRecord;
 import java.io.*;
 import java.text.ParseException;
 import java.util.*;
+import java.util.regex.Pattern;
 
 public class CsvNormalizer {
     private final List<RecordFilter> filters;
@@ -41,10 +43,15 @@ public class CsvNormalizer {
             } else {
                 if (recordOk(record)) {
                     writeRecord(record, writer);
+
                     if (isYes(record)) csvStats.augmentYes();
                     else if (isNo(record)) csvStats.augmentNo();
+
+                    if (PreviousFilter.isYes(record, Configuration.get().previousIndex())) csvStats.augmentPrevYes();
+                    if (PreviousFilter.isNo(record, Configuration.get().previousIndex())) csvStats.augmentPrevNo();
+
                     ++writtenRecords;
-                    if (recordsToKeep > 0 && writtenRecords > recordsToKeep ) break;
+                    if (recordsToKeep > 0 && writtenRecords > recordsToKeep) break;
                 }
             }
             System.out.println(record);
@@ -110,7 +117,11 @@ public class CsvNormalizer {
         for (int i = 0; i < headerIndexes.length; i++) {
             int headerIndex = headerIndexes[i];
 
-            String value = record.get(headerIndex).trim();
+            /* remuevo caracteres indeseables como guiones y puntos */
+            String value = record.get(headerIndex)
+                    .replaceAll(Pattern.quote("."), "")
+                    .replaceAll(Pattern.quote("-"), "")
+                    .trim();
             value = value.isEmpty() ? "__EMPTY__" : value;
 
             if (i == Configuration.get().lastIndex()) recordLine.append(value);
