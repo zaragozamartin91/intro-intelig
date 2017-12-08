@@ -34,8 +34,14 @@ public class AgeTransformer implements RecordTransformer {
 //        else if (age < 47) sage = "38to46";
 //        else sage = "gt46";
 
-        if (age < 30) sage = "lt30";
-        else if (age < 40) sage = "30to39";
+//        if (age < 30) sage = "lt30";
+//        else if (age < 40) sage = "30to39";
+//        else if (age < 50) sage = "40to49";
+//        else sage = "ge50";
+
+        // p 10000 regs
+        if (age < 32) sage = "lt32";
+        else if (age < 40) sage = "32to39";
         else if (age < 50) sage = "40to49";
         else sage = "ge50";
 
